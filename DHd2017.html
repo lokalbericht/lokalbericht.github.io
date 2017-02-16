@@ -680,13 +680,16 @@ name: Makrogenetisch
 Verknüpfung auf Blattebene über den Identifikator des Blattes, wobei der genetische Vorläufer an erster Stelle und die späteren Verarbeitungen dahinter gereiht werden:
 
 ```xml
-<linkGrp xml:id="intertextlinkGrp_00001" targFunc="goal source(s)" type="intertextualPath">
-      <link target="#PT.FLUGBLATTMIJU0.0010 #LB.TEIL2.1420 #LB.TEIL2.1440 #LB.TEIL2.1460" 
-      xml:id="intertextlinkGrp_00001_1"/>
+<linkGrp xml:id="macrolinkGrp_00006" targFunc="goal source(s)" type="geneticPath">
+        <link target="#AT.ERSCHREIBT1.0010 #LB.TEIL1.0170 #LB.TEIL1.0190" xml:id="macrolinkGrp_00006_1"/>
+</linkGrp>
+    
+<linkGrp xml:id="macrolinkGrp_00007" targFunc="goal source(s)" type="geneticPath">
+        <link target="#AT.ERSCHREIBT1.0020 #LB.TEIL2.1100 #LB.TEIL3.2040" xml:id="macrolinkGrp_00007_1"/>
 </linkGrp>
 ```
 
-<img src="images/LB.TEIL2.1460.png"
+<!-- <img src="images/LB.TEIL2.1460.png"
       class="jump" 
       style="position: absolute;
       top: 325px;
@@ -700,54 +703,62 @@ Verknüpfung auf Blattebene über den Identifikator des Blattes, wobei der genet
       -ms-transform: rotate(10deg);
       -o-transform: rotate(10deg);
       transform: rotate(10deg);"
-      title="Teil I, S. 146"/>
+      title="Teil I, S. 146"/> -->
 
-<img src="images/LB.TEIL2.1440.png"
+<img src="images/LB.TEIL1.0190.png"
       class="jump" 
       style="position: absolute;
-      top: 395px;
+      top: 335px;
       /*background:rgba(1,1,1,.5);      */
       color: white;
       padding: 15px 15px;
-      left: 380px;
+      left: 430px;
       width: 400px;
+      -webkit-transform: rotate(-12deg);
+      -moz-transform: rotate(-12deg);
+      -ms-transform: rotate(-12deg);
+      -o-transform: rotate(-12deg);
+      transform: rotate(-12deg);"
+      title="Teil I, S. 19"/> 
+
+<img src="images/LB.TEIL1.0170.png"
+      class="jump" 
+      style="
+      position: absolute;
+      top: 370px;
+      /*background:rgba(1,1,1,.5);      */
+      color: white;
+      padding: 15px 15px;
+      left: 360px;
+      width: 400px;
+      -webkit-transform: rotate(9deg);
+      -moz-transform: rotate(9deg);
+      -ms-transform: rotate(9deg);
+      -o-transform: rotate(9deg);
+      transform: rotate(9deg);"
+      title="Teil I, S. 17"/>
+
+<img src="images/AT.ERSCHREIBT1.0010.png"
+      style="position: absolute;
+      top: 323px;
+      /*background:rgba(1,1,1,.5);      */
+      color: white;
+      padding: 15px 15px;
+      left: 52px;
+      height: 600px;
       -webkit-transform: rotate(-5deg);
       -moz-transform: rotate(-5deg);
       -ms-transform: rotate(-5deg);
       -o-transform: rotate(-5deg);
       transform: rotate(-5deg);"
-      title="Teil I, S. 144"/> 
-
-<img src="images/LB.TEIL2.1420.png"
-      style="
-      position: absolute;
-      top: 500px;
-      /*background:rgba(1,1,1,.5);      */
-      color: white;
-      padding: 15px 15px;
-      left: 320px;
-      width: 400px;
-      -webkit-transform: rotate(-15deg);
-      -moz-transform: rotate(-15deg);
-      -ms-transform: rotate(-15deg);
-      -o-transform: rotate(-15deg);
-      transform: rotate(-15deg);"
-      title="Teil I, S. 142"/>
-
-<img src="images/PT.FLUGBLATTMIJU0.0010.png"
-      style="position: absolute;
-      top: 300px;
-      /*background:rgba(1,1,1,.5);      */
-      color: white;
-      padding: 15px 15px;
-      left: 52px;
-      height: 430px;"
-      title="Flugblatt im Juli"/>
+      title="Er schreibt"/>
 
 ---
 name: Digitale Edition
-background-image: url(images/LB_Lokalbericht2.png)
+background-image: url(images/LB_ErSchreibt_Teil1.png)
 background-size: contain
+
+.footElementLeft[<a href="http://www.lokalbericht.ch/synopsis/AT.ERSCHREIBT1.0010-d/LB.TEIL1.0170-d" target="_blank">lokalbericht.ch/synopsis/AT.ERSCHREIBT1.0010-d/LB.TEIL1.0170-d</a>]
 
 ---
 name: Nachhaltigkeit
