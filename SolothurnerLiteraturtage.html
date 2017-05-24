@@ -1,0 +1,710 @@
+<!--<!DOCTYPE html>-->
+<html>
+  <head>
+    <title>Hermann Burgers Lokalbericht &mdash; 39. Solothurner Literaturtage</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <style type="text/css">
+      @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+      @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+      @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+      @import url(https://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300,100);
+      @import url(https://fonts.googleapis.com/css?family=Josefin+Slab:400,700,400italic,700italic);
+      @import url(https://fonts.googleapis.com/css?family=Special+Elite);
+
+      body { font-family: 'Droid Serif'; }
+      h1, h2, h3, h4 {
+        font-family: 'Josefin Slab';
+        font-weight: normal;
+        background:rgba(255,255,255,.8);
+        padding: 15px 15px;
+      }
+      .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; 
+      font-size:13px;}
+      
+      a:link, a:visited {
+      color: black;
+      text-decoration: none;
+      }
+
+      .bibtex {
+      width: 750px;
+      height: 450px;
+      overflow: scroll;
+      font-size: 12px;
+      }
+        
+      .spaced {
+      line-height: 30px;}
+
+      .ElementRight {
+      position: absolute;
+      bottom: 50px;
+      background:rgba(1,1,1,.5);      
+      padding: 15px 15px;
+      right: 0px;
+      color: white;
+      }
+      .horizontalElementCalascino-1a {
+      position: absolute;
+      top: 100px;
+      background: rgba(255, 255, 255, 0.8);
+      color: black;
+      padding: 5px 15px;
+      right: 80px;
+      width: 500px;
+      font-size: 36px;
+      line-height: 36px;
+      }
+      .horizontalElementCalascino-1b {
+      position: absolute;
+      top: 150px;
+      background: rgba(255, 255, 255, 0.8);
+      color: black;
+      padding: 5px 15px;
+      right: 80px;
+      width: 375px;
+      font-size: 36px;
+      line-height: 36px;
+      }
+      .horizontalElementCalascino-1c {
+      position: absolute;
+      bottom: 145px;
+      background: rgba(1, 1, 1, 0.8);
+      color: white;
+      padding: 5px 15px;
+      left: 0px;
+      width: 150px;
+      font-size: 18px;
+      line-height: 25px;
+      }
+      .horizontalElementCalascino-1d {
+      position: absolute;
+      bottom: 80px;
+      background: rgba(1, 1, 1, 0.8);
+      color: white;
+      padding: 5px 15px;
+      left: 50px;
+      width: 165px;
+      font-size: 18px;
+      line-height: 25px;
+      }
+      .horizontalElementCalascino-1e {
+      position: absolute;
+      bottom: 185px;
+      background: rgba(1, 1, 1, 0.8);
+      color: white;
+      padding: 5px 15px;
+      left: 0px;
+      width: 150px;
+      font-size: 18px;
+      line-height: 25px;
+      }
+      .jump:hover
+      {
+      z-index:100 !important;
+      }
+      .blechtrommel1a {
+      position: absolute;
+      left: 100px;
+      bottom: 0;
+      width: 70%;
+      height: 90%;
+      background-image: url(images/BlechtrommelFischer.jpg);
+      -webkit-transform: rotate(-15deg);
+      -moz-transform: rotate(-15deg);
+      -ms-transform: rotate(-15deg);
+      -o-transform: rotate(-15deg);
+      transform: rotate(-15deg);
+      background-size: contain;
+      background-repeat: no-repeat;
+      color: transparent;
+      }
+      .blechtrommel1a:hover
+      {
+      z-index:100 !important;
+      }
+      .blechtrommel2a {
+      position: absolute;
+      right: 50px;
+      bottom: 0;
+      width: 50%;
+      height: 90%;
+      background-image: url(images/PT.AT11071970.0360.png);
+      -webkit-transform: rotate(10deg);
+      -moz-transform: rotate(10deg);
+      -ms-transform: rotate(10deg);
+      -o-transform: rotate(10deg);
+      transform: rotate(10deg);
+      background-size: contain;
+      background-repeat: no-repeat;
+      color: transparent;
+      }
+      .blechtrommel2a:hover
+      {
+      z-index:100 !important;
+      }
+      .blechtrommel2 {
+      position: absolute;
+      right: 25px;
+      top: 20;
+      width: 50%;
+      height: 95%;
+      background-image: url(images/PT.AT11071970.0360.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      color: transparent;
+      }
+      .hermesquittung {
+      position: absolute;
+      right: 0px;
+      top: 0;
+      width: 36.3%;
+      height: 70%;
+      background-image: url(images/LD.HERMESQUITTUNG.png);
+      -webkit-transform: rotate(10deg);
+      -moz-transform: rotate(10deg);
+      -ms-transform: rotate(10deg);
+      -o-transform: rotate(10deg);
+      transform: rotate(10deg);
+      background-size: contain;
+      background-repeat: no-repeat;
+      color: transparent;
+      }
+      .horizontalElementRomanhandwerk {
+      position: absolute;
+      bottom: 116px;
+      background:rgba(1,1,1,.7);      
+      color: white;
+      padding: 5px 15px;
+      left: 68px;
+      width: 80%;
+      font-size: 22px;
+      line-height: 30px;
+      }
+      .horizontalElementLokalbericht {
+      position: absolute;
+      top: 130px;
+      background:rgba(1,1,1,.7);      
+      color: white;
+      padding: 5px 15px;
+      left: 68px;
+      width: 80%;
+      font-size: 22px;
+      line-height: 30px;
+      }
+      .horizontalElementBarzel {
+      position: absolute;
+      bottom: 135px;
+      background:rgba(1,1,1,.2);      
+      color: white;
+      padding: 15px 15px;
+      left: 162px;
+      width: 550px;
+      line-height: 45px;
+      }
+      .horizontalElementTeam {
+      position: absolute;
+      top: 200px;
+      background:rgba(1,1,1,.6);      
+      color: white;
+      padding: 15px 45px;
+      left: 0px;
+      width: 430px;
+      font-size: 14px;
+      line-height: 20px;
+      } 
+      .bottomElementLeft {
+      position: absolute;
+      bottom: 45px;
+      left: 46px;
+      font-size: 16px;
+      color: gray;
+      background:rgba(255,255,255,.9);
+      padding: 15px 15px;
+      }
+      .bottomElementRight {
+      position: absolute;
+      bottom: 45px;
+      background:rgba(255,255,255,.9);      
+      padding: 15px 15px;
+      right: 20px;
+      }
+      .footElement {
+      position: absolute;
+      bottom: 0px;
+      left: 46px;
+      background:rgba(255,255,255,.9);      
+      padding: 15px 15px;
+      }
+      .headElementLeft {
+      position: absolute;
+      top: 0px;
+      left: 46px;
+      width: 400px;
+      background:rgba(255,255,255,.9);      
+      padding: 15px 15px;
+      }
+      .footElementCenter {
+      position: absolute;
+      bottom: 0px;
+      left: 226px;
+      font-size: 10px;
+      color: gray;
+      padding: 15px 15px;
+      }
+      .footElementLeft {
+      position: absolute;
+      bottom: 0px;
+      left: 68px;
+      font-size: 16px;
+      color: gray;
+      background:rgba(255,255,255,.9);
+      padding: 15px 15px;
+      }
+      .footElementRight {
+      position: absolute;
+      bottom: 0px;
+      left: 505px;
+      width: 220px;
+      font-size: 16px;
+      color: gray;
+      background:rgba(255,255,255,.9);
+      padding: 10px 10px;
+      }
+      .blockquote {
+      padding-left: 30px;
+      padding-right: 30px;
+      margin: 20px;
+      margin-bottom: 10px;
+      text-indent: 10px;
+      }
+      .blockquote:after {
+      content: ' »';
+      font-size: 200%;
+      margin-right: 50px;
+      }
+      .blockquote:before {
+      content: '«';
+      display: block;
+      float: left;
+      margin-left: -50;
+      font-size: 200%;
+      }
+      .lokalbericht-ch-nav {
+      position: absolute;
+      top: 10px;
+      left: 220px;
+      width: 460px;
+      height: 110px;
+      }
+      .lokalbericht-ch-nav:hover {
+      background-color: rgba(51, 102, 153, 0.1);
+      }
+      .lokalbericht-ch-corenav {
+      position: absolute;
+      top: 120px;
+      left: 220px;
+      width: 335px;
+      height: 70px;
+      }
+      .lokalbericht-ch-corenav:hover {
+      background-color: rgba(51, 102, 153, 0.1);  
+      }
+      .lokalbericht-ch-corel {
+      position: absolute;
+      top: 190px;
+      left: 220px;
+      width: 175px;
+      height: 250px;
+      }
+      .lokalbericht-ch-corel:hover {
+      background-color: rgba(51, 102, 153, 0.1);  
+      }
+      .lokalbericht-ch-corer {
+      position: absolute;
+      top: 190px;
+      left: 400px;
+      width: 155px;
+      height: 250px;
+      }
+      .lokalbericht-ch-corer:hover {
+      background-color: rgba(51, 102, 153, 0.1);  
+      }
+      .lokalbericht-ch-navr {
+      position: absolute;
+      top: 120px;
+      left: 555px;
+      width: 125px;
+      height: 320px;
+      }
+      .lokalbericht-ch-navr:hover {
+      background-color: rgba(51, 102, 153, 0.1);  
+      }
+      .lokalbericht-ch-quot {
+      position: absolute;
+      top: 440px;
+      left: 220px;
+      width: 460px;
+      height: 25px;
+      }
+      .lokalbericht-ch-quot:hover {
+      background-color: rgba(51, 102, 153, 0.1);  
+      }
+      a.lokalbericht-ch-visnav {
+      display: block;
+      position: absolute;
+      top: 465px;
+      left: 220px;
+      width: 460px;
+      height: 200px;
+      }
+      .lokalbericht-ch-visnav:hover {
+      background-color: rgba(51, 102, 153, 0.1);  
+      }
+
+    </style>
+  </head>
+  <body>
+    <textarea id="source">
+
+name: Titelseite
+class: center, center
+
+      <hr style="height:10px; visibility:hidden;" />
+      
+## Digitale Edition von Hermann Burgers *Lokalbericht*
+
+Magnus Wieland, Schweizerisches Literaturarchiv
+
+Simon Zumsteg, Zürich<br/><br/>
+
+<span style="opacity: 0.7;">*Zukunftsatelier: Literatur & Digitalität*</span><br/><br/>
+<span style="opacity: 0.7;">39. Solothurner Literaturtage, 27. Mai 2017</span>
+<hr style="height:0px; visibility:hidden;" />
+
+
+http://www.lokalbericht.ch | http://purl.org/lokalbericht
+        
+.bottomElementLeft[<img style="max-height: 85px;" src="images/NB_SLA.png" alt="Logo SLA">]
+.bottomElementRight[![Logo CCeH](images/CCeH.png)]
+.footElement[.left[<img style="max-height: 25px;" src="images/SNF.png" alt="Logo SNF">]]
+
+<!-- background-image: 
+url(images/ErSchreibt.jpg) -->
+
+---
+name: Ueberblick        
+        
+# Überblick
+
+.spaced[
+1. [Hermann Burger](#Autor) und seine [Poetologie](#Romanhandwerk)
+1. [Dossier génétique](#StemmatischerUeberblick)
+1. Das [Editionsprojekt](#Editionsprojekt)
+1. [Digitale Edition](#lokalbericht.ch)
+ * [Makrogenese](#Makrogenetisch)
+  <!-- 1. [Ausgewählte Probleme](#Stolpersteine) -->
+      <!-- * [Datenstruktur (TEI)](#DokumentTextzentrierung) -->
+      <!-- * [Textgenetik: Mikroebene](#Mikrogenetisch1) -->
+      <!-- * [Textgenetik: Makroebene](#Makrogenetisch) -->
+ <!-- 1. [Nachhaltigkeitsaspekte](#Nachhaltigkeit) -->
+ <!-- 1. [Technologien](#Technologie) -->
+1. [Diskussion](#Diskussion)
+<!--1. [Literatur](#Literatur)-->
+]
+
+<!--<a href="http://uni-koeln.de/~pdaengel/lokalbericht-pr/annex/annex.html#1" style="font-size: small;" target="_blank">Annex</a>-->
+
+---
+name: Postkarte
+background-image: url(images/vogt.png)
+background-size: contain
+class: middle, center
+
+---
+name: Autor
+background-image: url(images/Burger1.jpg)
+class: bottom, center
+
+### Hermann Burger 1942 – 1989
+
+# [Der Schriftsteller](#Ueberblick)
+.footElementCenter[© Hermann und Matthias Burger]
+        
+---
+name: Calascino1
+background-image: url(images/LD.FOTOCAL0.0010.png)
+background-size: contain
+
+
+.horizontalElementCalascino-1a[Calascino sopra Gadero]
+
+.horizontalElementCalascino-1b[Juli/August 1970]
+
+.horizontalElementCalascino-1c[Günter Grass: 
+
+*Die Blechtrommel*]
+
+.horizontalElementCalascino-1d[*Aargauer Tagblatt*]   
+
+---
+name: Blechtrommel
+
+<div class="blechtrommel2a">.</div>
+<div class="blechtrommel1a">.</div>
+     
+---
+name: Calascino2
+background-image: url(images/LD.FOTOCAL0.0010.png)
+background-size: contain
+
+
+.horizontalElementCalascino-1a[Calascino sopra Gadero]
+
+.horizontalElementCalascino-1b[Juli/August 1970]
+
+.horizontalElementCalascino-1e[Hermes Media 3]
+
+---
+name: Maschinenwechsel
+background-image: url(images/LB.TEIL1.0100.png)
+
+.headElementLeft[Typoskript *Lokalbericht*, S. 10 
+
+(o.D., SLA, Nachlass Hermann Burger, Schachtel 05, Sig. A-01-b)]
+
+<div class="hermesquittung">.</div>
+
+---
+name: Romanhandwerk
+background-image: url(images/AT.ROMANHAND0.0010.png)
+background-size: contain
+
+.horizontalElementRomanhandwerk[.blockquote[
+Das Romanhandwerk ist ein Puzzle-Spiel, man beginnt mit dem Anfertigen kleiner Einzelteile, malt ein paar gelungene Details, ohne auch nur eine Ahnung vom Ganzen zu haben. Mit der Zeit ergibt sich das grosse Bild, und dann geht man auf die Suche nach den fehlenden Teilen.]]
+
+        
+.footElementLeft[Typoskript *Romanhandwerk* 
+
+(o.D., SLA, Nachlass Hermann Burger, Schachtel 03, Sig. A-01-a)]
+
+---
+name: Lokalbericht
+background-image: url(images/LB.TEIL1.0760.png)
+background-size: contain
+
+.horizontalElementLokalbericht[.blockquote[
+        Der Lokalredaktor Barzel ist in meinen Augen der glücklichste, weil unbewussteste Schriftsteller der Welt. Er trägt ein riesiges Mosaik aus kleinsten, buntesten Steinchen zusammen[,] ohne an die Illusion eines Gesamtplanes zu glauben.]]
+
+.footElementLeft[Typoskript *Lokalbericht* 
+
+(o.D., SLA, Nachlass Hermann Burger, Schachtel 05, Sig. A-01-b)]
+
+---
+name: Inhaltsübersicht
+background-image: url(images/LB.INHALTUETS1.0010.png)
+background-size: contain
+
+.horizontalElementBarzel[ ]
+
+.footElementRight[Typoskript *Inhaltsübersicht*
+
+(o.D., in: SLA, Nachlass Hermann Burger)]
+
+---
+name: StemmatischerUeberblick
+background-image: url(images/LB_Stemma_20160830.png)
+background-size: contain
+
+# [*Dossier génétique*](#Ueberblick)
+
+.footElementRight[http://purl.org/lokalbericht/dossier]
+
+--
+
+name: Editionsprojekt2
+background-image: url(images/LB_Stemma_Illusion_20160830.png)
+
+
+---
+name: Editionsprojekt
+
+# [Das Editionsprojekt](#Ueberblick)
+
+- 178 Romantyposkriptseiten
+
+- hauptsächlich einseitig beschrieben
+
+- wenig hand- und maschinenschriftliche Korrekturen
+
+- *Avant textes*: viele Vorstufen der 'Mosaiksteine'
+        
+- insgesamt rund 900 Dokumente
+
+- umfangreiche Kontextmaterialien (Zeitungsseiten, Briefe, Schemata u. m.)
+
+---   
+
+- Hybrid-Edition mit digitalem Schwerpunkt
+
+ - Faksimile
+ - diplomatisch<!-- -topographisch -->e Transkriptionen
+ - Lesefassung
+ - Kommentar
+
+- Druckausgabe (illustrierte Lesefassung mit ausführlichem Überblickskommentar)
+
+---
+name: Editionsprojekt
+background-image: url(images/LB_Print.png)
+class: top
+
+# [Das Editionsprojekt](#Ueberblick)
+
+.horizontalElementTeam[        
+**Projektleitung**: 
+
+PD Dr. Irmgard Wirtz, Leiterin SLA 
+
+**Philologie**: 
+
+Dr. Simon Zumsteg und Dr. Magnus Wieland (SLA)
+
+**Beratung**: 
+
+Dr. Patrick Sahle, Dr. Franz Fischer, Peter Dängeli (CCeH)
+
+**Technische Realisierung**: 
+
+Peter Dängeli, Christian Theisen, Bernhard Strecker (CCeH)
+
+**Projektdauer**: 
+
+2013 &ndash; 2016
+]
+
+---
+name: lokalbericht.ch
+background-image: url(images/LB_Lokalbericht.png)
+background-size: contain
+
+# [Digitale Edition](#Ueberblick)
+
+
+---
+name: Makrogenetisch
+# [Makrogenese](#Ueberblick)
+<!-- # [#3](#Ueberblick): Textgenetik: Makroebene -->
+
+<!-- Verfolgter Ansatz:  -->
+
+Verknüpfung auf Blattebene über den Identifikator des Blattes, wobei der genetische Vorläufer an erster Stelle und die späteren Verarbeitungen dahinter gereiht werden:
+
+```xml
+<linkGrp xml:id="macrolinkGrp_00006" targFunc="goal source(s)" type="geneticPath">
+        <link target="#AT.ERSCHREIBT1.0010 #LB.TEIL1.0170 #LB.TEIL1.0190" xml:id="macrolinkGrp_00006_1"/>
+</linkGrp>
+    
+<linkGrp xml:id="macrolinkGrp_00007" targFunc="goal source(s)" type="geneticPath">
+        <link target="#AT.ERSCHREIBT1.0020 #LB.TEIL2.1100 #LB.TEIL3.2040" xml:id="macrolinkGrp_00007_1"/>
+</linkGrp>
+```
+
+<!-- <img src="images/LB.TEIL2.1460.png"
+      class="jump" 
+      style="position: absolute;
+      top: 325px;
+      /*background:rgba(1,1,1,.5);      */
+      color: white;
+      padding: 15px 15px;
+      left: 468px;
+      width: 400px;
+      -webkit-transform: rotate(10deg);
+      -moz-transform: rotate(10deg);
+      -ms-transform: rotate(10deg);
+      -o-transform: rotate(10deg);
+      transform: rotate(10deg);"
+      title="Teil I, S. 146"/> -->
+
+<img src="images/LB.TEIL1.0190.png"
+      class="jump" 
+      style="position: absolute;
+      top: 335px;
+      /*background:rgba(1,1,1,.5);      */
+      color: white;
+      padding: 15px 15px;
+      left: 430px;
+      width: 400px;
+      -webkit-transform: rotate(-12deg);
+      -moz-transform: rotate(-12deg);
+      -ms-transform: rotate(-12deg);
+      -o-transform: rotate(-12deg);
+      transform: rotate(-12deg);"
+      title="Teil I, S. 19"/> 
+
+<img src="images/LB.TEIL1.0170.png"
+      class="jump" 
+      style="
+      position: absolute;
+      top: 370px;
+      /*background:rgba(1,1,1,.5);      */
+      color: white;
+      padding: 15px 15px;
+      left: 360px;
+      width: 400px;
+      -webkit-transform: rotate(9deg);
+      -moz-transform: rotate(9deg);
+      -ms-transform: rotate(9deg);
+      -o-transform: rotate(9deg);
+      transform: rotate(9deg);"
+      title="Teil I, S. 17"/>
+
+<img src="images/AT.ERSCHREIBT1.0010.png"
+      style="position: absolute;
+      top: 323px;
+      /*background:rgba(1,1,1,.5);      */
+      color: white;
+      padding: 15px 15px;
+      left: 52px;
+      height: 600px;
+      -webkit-transform: rotate(-5deg);
+      -moz-transform: rotate(-5deg);
+      -ms-transform: rotate(-5deg);
+      -o-transform: rotate(-5deg);
+      transform: rotate(-5deg);"
+      title="Er schreibt"/>
+
+---
+name: Digitale Edition
+background-image: url(images/LB_ErSchreibt_Teil1a.png)
+background-size: contain
+
+.lokalbericht-ch-nav[]
+.lokalbericht-ch-corenav[]
+.lokalbericht-ch-corel[]
+.lokalbericht-ch-corer[]
+.lokalbericht-ch-navr[]
+.lokalbericht-ch-quot[]
+<a class="lokalbericht-ch-visnav" href="http://www.lokalbericht.ch/synopsis/AT.ERSCHREIBT1.0010-t/LB.TEIL1.0170-t#lb-birdseye" target="_blank"></a>
+
+.footElementLeft[<a href="http://www.lokalbericht.ch/synopsis/AT.ERSCHREIBT1.0010-t/LB.TEIL1.0170-t" target="_blank">lokalbericht.ch/synopsis/AT.ERSCHREIBT1.0010-t/LB.TEIL1.0170-t</a>]
+
+---
+name: Diskussion
+layout: false
+background-image: url(images/ErSchreibt.jpg)
+
+#Vielen Dank für die Aufmerksamkeit
+
+
+    </textarea>
+    
+
+    <!-- <script src="http://gnab.github.io/remark/downloads/remark-latest.min.js" type="text/javascript"></script> -->
+    <script src="remark/out/remark.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      var slideshow = remark.create();
+    </script>
+
+  </body>
+</html>
