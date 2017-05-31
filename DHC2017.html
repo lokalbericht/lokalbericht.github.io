@@ -1,0 +1,1636 @@
+<!--<!DOCTYPE html>-->
+<html>
+  <head>
+    <title>Hermann Burgers Lokalbericht &mdash; Digital Humanities Cologne (DHC) Colloquium 2017</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <style type="text/css">
+      @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+      @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+      @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+      @import url(https://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300,100);
+      @import url(https://fonts.googleapis.com/css?family=Josefin+Slab:400,700,400italic,700italic);
+      @import url(https://fonts.googleapis.com/css?family=Special+Elite);
+
+      body { font-family: 'Droid Serif'; }
+      h1, h2, h3, h4 {
+        font-family: 'Josefin Slab';
+        font-weight: normal;
+        background:rgba(255,255,255,.8);
+        padding: 15px 15px;
+      }
+      .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; 
+      font-size:13px;}
+      
+      a:link, a:visited {
+      color: black;
+      text-decoration: none;
+      }
+
+      .bibtex {
+      width: 750px;
+      height: 450px;
+      overflow: scroll;
+      font-size: 12px;
+      }
+        
+      .spaced {
+      line-height: 30px;}
+
+      .ElementRight {
+      position: absolute;
+      bottom: 50px;
+      background:rgba(1,1,1,.5);      
+      padding: 15px 15px;
+      right: 0px;
+      color: white;
+      }
+      .horizontalElementCalascino-1a {
+      position: absolute;
+      top: 100px;
+      background: rgba(255, 255, 255, 0.8);
+      color: black;
+      padding: 5px 15px;
+      right: 80px;
+      width: 500px;
+      font-size: 36px;
+      line-height: 36px;
+      }
+      .horizontalElementCalascino-1b {
+      position: absolute;
+      top: 150px;
+      background: rgba(255, 255, 255, 0.8);
+      color: black;
+      padding: 5px 15px;
+      right: 80px;
+      width: 375px;
+      font-size: 36px;
+      line-height: 36px;
+      }
+      .horizontalElementCalascino-1c {
+      position: absolute;
+      bottom: 145px;
+      background: rgba(1, 1, 1, 0.8);
+      color: white;
+      padding: 5px 15px;
+      left: 0px;
+      width: 150px;
+      font-size: 18px;
+      line-height: 25px;
+      }
+      .horizontalElementCalascino-1d {
+      position: absolute;
+      bottom: 80px;
+      background: rgba(1, 1, 1, 0.8);
+      color: white;
+      padding: 5px 15px;
+      left: 50px;
+      width: 165px;
+      font-size: 18px;
+      line-height: 25px;
+      }
+      .horizontalElementCalascino-1e {
+      position: absolute;
+      bottom: 185px;
+      background: rgba(1, 1, 1, 0.8);
+      color: white;
+      padding: 5px 15px;
+      left: 0px;
+      width: 150px;
+      font-size: 18px;
+      line-height: 25px;
+      }
+      .jump:hover
+      {
+      z-index:100 !important;
+      }
+      .blechtrommel1a {
+      position: absolute;
+      left: 100px;
+      bottom: 0;
+      width: 70%;
+      height: 90%;
+      background-image: url(images/BlechtrommelFischer.jpg);
+      -webkit-transform: rotate(-15deg);
+      -moz-transform: rotate(-15deg);
+      -ms-transform: rotate(-15deg);
+      -o-transform: rotate(-15deg);
+      transform: rotate(-15deg);
+      background-size: contain;
+      background-repeat: no-repeat;
+      color: transparent;
+      }
+      .blechtrommel1a:hover
+      {
+      z-index:100 !important;
+      }
+      .blechtrommel2a {
+      position: absolute;
+      right: 50px;
+      bottom: 0;
+      width: 50%;
+      height: 90%;
+      background-image: url(images/PT.AT11071970.0360.png);
+      -webkit-transform: rotate(10deg);
+      -moz-transform: rotate(10deg);
+      -ms-transform: rotate(10deg);
+      -o-transform: rotate(10deg);
+      transform: rotate(10deg);
+      background-size: contain;
+      background-repeat: no-repeat;
+      color: transparent;
+      }
+      .blechtrommel2a:hover
+      {
+      z-index:100 !important;
+      }
+      .blechtrommel2 {
+      position: absolute;
+      right: 25px;
+      top: 20;
+      width: 50%;
+      height: 95%;
+      background-image: url(images/PT.AT11071970.0360.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      color: transparent;
+      }
+      .hermesquittung {
+      position: absolute;
+      right: 0px;
+      top: 0;
+      width: 36.3%;
+      height: 70%;
+      background-image: url(images/LD.HERMESQUITTUNG.png);
+      -webkit-transform: rotate(10deg);
+      -moz-transform: rotate(10deg);
+      -ms-transform: rotate(10deg);
+      -o-transform: rotate(10deg);
+      transform: rotate(10deg);
+      background-size: contain;
+      background-repeat: no-repeat;
+      color: transparent;
+      }
+      .horizontalElementRomanhandwerk {
+      position: absolute;
+      bottom: 116px;
+      background:rgba(1,1,1,.7);      
+      color: white;
+      padding: 5px 15px;
+      left: 68px;
+      width: 80%;
+      font-size: 22px;
+      line-height: 30px;
+      }
+      .horizontalElementLokalbericht {
+      position: absolute;
+      top: 130px;
+      background:rgba(1,1,1,.7);      
+      color: white;
+      padding: 5px 15px;
+      left: 68px;
+      width: 80%;
+      font-size: 22px;
+      line-height: 30px;
+      }
+      .horizontalElementBarzel {
+      position: absolute;
+      bottom: 135px;
+      background:rgba(1,1,1,.2);      
+      color: white;
+      padding: 15px 15px;
+      left: 162px;
+      width: 550px;
+      line-height: 45px;
+      }
+      .horizontalElementTeam {
+      position: absolute;
+      top: 200px;
+      background:rgba(1,1,1,.6);      
+      color: white;
+      padding: 15px 45px;
+      left: 0px;
+      width: 430px;
+      font-size: 14px;
+      line-height: 20px;
+      } 
+      .bottomElementLeft {
+      position: absolute;
+      bottom: 45px;
+      left: 46px;
+      font-size: 16px;
+      color: gray;
+      background:rgba(255,255,255,.9);
+      padding: 15px 15px;
+      }
+      .bottomElementRight {
+      position: absolute;
+      bottom: 45px;
+      background:rgba(255,255,255,.9);      
+      padding: 15px 15px;
+      right: 20px;
+      }
+      .footElement {
+      position: absolute;
+      bottom: 0px;
+      left: 46px;
+      background:rgba(255,255,255,.9);      
+      padding: 15px 15px;
+      }
+      .headElementLeft {
+      position: absolute;
+      top: 0px;
+      left: 46px;
+      width: 400px;
+      background:rgba(255,255,255,.9);      
+      padding: 15px 15px;
+      }
+      .footElementCenter {
+      position: absolute;
+      bottom: 0px;
+      left: 226px;
+      font-size: 10px;
+      color: gray;
+      padding: 15px 15px;
+      }
+      .footElementLeft {
+      position: absolute;
+      bottom: 0px;
+      left: 68px;
+      font-size: 16px;
+      color: gray;
+      background:rgba(255,255,255,.9);
+      padding: 15px 15px;
+      }
+      .footElementRight {
+      position: absolute;
+      bottom: 0px;
+      left: 505px;
+      width: 220px;
+      font-size: 16px;
+      color: gray;
+      background:rgba(255,255,255,.9);
+      padding: 10px 10px;
+      }
+      .blockquote {
+      padding-left: 30px;
+      padding-right: 30px;
+      margin: 20px;
+      margin-bottom: 10px;
+      text-indent: 10px;
+      }
+      .blockquote:after {
+      content: ' »';
+      font-size: 200%;
+      margin-right: 50px;
+      }
+      .blockquote:before {
+      content: '«';
+      display: block;
+      float: left;
+      margin-left: -50;
+      font-size: 200%;
+      }
+      .lokalbericht-ch-nav {
+      position: absolute;
+      top: 10px;
+      left: 220px;
+      width: 460px;
+      height: 110px;
+      }
+      .lokalbericht-ch-nav:hover {
+      background-color: rgba(51, 102, 153, 0.1);
+      }
+      .lokalbericht-ch-corenav {
+      position: absolute;
+      top: 120px;
+      left: 220px;
+      width: 335px;
+      height: 70px;
+      }
+      .lokalbericht-ch-corenav:hover {
+      background-color: rgba(51, 102, 153, 0.1);  
+      }
+      .lokalbericht-ch-corel {
+      position: absolute;
+      top: 190px;
+      left: 220px;
+      width: 175px;
+      height: 250px;
+      }
+      .lokalbericht-ch-corel:hover {
+      background-color: rgba(51, 102, 153, 0.1);  
+      }
+      .lokalbericht-ch-corer {
+      position: absolute;
+      top: 190px;
+      left: 400px;
+      width: 155px;
+      height: 250px;
+      }
+      .lokalbericht-ch-corer:hover {
+      background-color: rgba(51, 102, 153, 0.1);  
+      }
+      .lokalbericht-ch-navr {
+      position: absolute;
+      top: 120px;
+      left: 555px;
+      width: 125px;
+      height: 320px;
+      }
+      .lokalbericht-ch-navr:hover {
+      background-color: rgba(51, 102, 153, 0.1);  
+      }
+      .lokalbericht-ch-quot {
+      position: absolute;
+      top: 440px;
+      left: 220px;
+      width: 460px;
+      height: 25px;
+      }
+      .lokalbericht-ch-quot:hover {
+      background-color: rgba(51, 102, 153, 0.1);  
+      }
+      a.lokalbericht-ch-visnav {
+      display: block;
+      position: absolute;
+      top: 465px;
+      left: 220px;
+      width: 460px;
+      height: 200px;
+      }
+      .lokalbericht-ch-visnav:hover {
+      background-color: rgba(51, 102, 153, 0.1);  
+      }
+
+    </style>
+  </head>
+  <body>
+    <textarea id="source">
+
+name: Titelseite
+class: center, center
+
+      <br/>
+      <br/>
+      
+## Hermann Burgers *Lokalbericht* – vom Romantyposkript zur digitalen Edition
+
+Peter Dängeli, Cologne Center for eHumanities<br/><br/>
+
+
+<span style="opacity: 0.7;">*Digital Humanities*-Kolloquium</span>
+
+<span style="opacity: 0.7;">Köln, 1. Juni 2017</span><br/><br/>
+
+
+http://www.lokalbericht.ch | http://purl.org/lokalbericht
+        
+.bottomElementLeft[<img style="max-height: 85px;" src="images/NB_SLA.png" alt="Logo SLA">]
+.bottomElementRight[![Logo CCeH](images/CCeH.png)]
+.footElement[.left[<img style="max-height: 25px;" src="images/SNF.png" alt="Logo SNF">]]
+
+<!-- background-image: 
+url(images/ErSchreibt.jpg) -->
+
+???
+
+* Editionsprojekt, Hybridedition (Druck und Digitale Edition)
+
+---
+name: Ueberblick        
+        
+# Überblick
+
+.spaced[
+1. [Hermann Burger](#Autor) und seine [Poetologie](#Romanhandwerk)
+1. [Dossier génétique](#StemmatischerUeberblick)
+1. Das [Editionsprojekt](#Editionsprojekt)
+1. [Digitale Edition](#lokalbericht.ch)
+  * [Datenstruktur (TEI)](#DokumentTextzentrierung)
+  * [Textgenetik: Mikroebene](#Mikrogenetisch1)
+  * [Textgenetik: Makroebene](#Makrogenetisch)
+  <!-- 1. [Ausgewählte Probleme](#Stolpersteine) -->
+1. Hinter der Kulisse
+  * [Werkzeugauswahl: bestimmende Faktoren](#Werkzeugauswahl)
+  * [Eingesetzte Werkzeuge](#Technologie)
+  <!-- * Kiln -->
+  * [Nachhaltigkeitsaspekte](#Nachhaltigkeit)
+1. [Diskussion](#Diskussion)
+1. [Literatur](#Literatur)
+]
+
+<!--<a href="http://uni-koeln.de/~pdaengel/lokalbericht-pr/annex/annex.html#1" style="font-size: small;" target="_blank">Annex</a>-->
+
+???
+
+Überblick
+* Autor
+* Dokumente
+* Digitale Edition aus Nutzerperspektive
+* Digitale Edition aus Entwicklerperspektive
+
+---
+name: Autor
+background-image: url(images/Burger1.jpg)
+class: bottom, center
+
+### Hermann Burger 1942 – 1989
+
+# [Der Schriftsteller](#Ueberblick)
+.footElementCenter[© Hermann und Matthias Burger]
+
+???
+
+Hermann Burger
+
+Hier im Anzug mit Krawatte an seiner Schreibmaschine (Bild aus dem Entstehungszeitraum des *Lokalbericht*)
+
+Den Roman *Lokalbericht* verfasst er zur Hauptsache um 1970 (mit 28 Jahren), er wird ihn aber selber Zeit seines Lebens nicht veröffentlichen.
+
+Im Romantyposkript verarbeitet er Versatzstücke eigener Texte, die er zum Teil zehn Jahre zuvor erstmals niederschrieb und in der Zwischenzeit mehrfach überarbeitete. 
+
+Hermann Burgers Nachlass lagert heute im Schweizerischen Literaturarchiv in Bern. Er wurde dem SLA nach Burgers in gewisser Weise konsequenten Suizid – Burger, der unter einer schweren manisch-depressiven Erkrankung litt, hatte in seinem Selbstmord-Thesen-Büchlein "Tractatus logico-suicidalis" den Selbstmord zum Kunstwerk, zum würdigen Abschluss einer Krankheitskarriere, zum *opus magnum* stilisiert – übergeben.
+
+---
+name: Calascino1
+background-image: url(images/LD.FOTOCAL0.0010.png)
+background-size: contain
+
+
+.horizontalElementCalascino-1a[<a href="http://www.lokalbericht.ch/orte/LB.OFACT.CALASCINO#LB.OFACT.CALASCINO" target="_blank"/>Calascino sopra Gadero</a>]
+
+.horizontalElementCalascino-1b[Juli/August 1970]
+
+.horizontalElementCalascino-1c[Günter Grass: 
+
+*Die Blechtrommel*]
+
+.horizontalElementCalascino-1d[*Aargauer Tagblatt*]   
+
+???
+
+**Schreibszene**
+
+Wir haben es mit einem Autor zu tun, der selbst im heißen Tessiner Sommer im Langarmhemd an der Sonne sitzt, das Haupt mit einem Strohhut (Freiämter, Trilby?) bedeckt.
+
+Das Polaroidfoto zeigt den Autor an der Arbeit auf der besonnten Terrasse des Ferienhauses (das Bekannten von Burgers Mutter gehört) im Sommer 1970. 
+
+Seinen Eltern schreibt er in einem [Brief (26.7.1968)](http://www.lokalbericht.ch/BR.BURGERELTERN1.0010-d), es sei für ihn "das günstigste Schreibklima", denn es bietet ihm "jene Polarität von Mondänität und Abgeschiedenheit, die zur Erholung als auch zum Arbeiten fruchtbar wirkt".
+
+Auf der Folie sind zwei Dinge hervorgehoben, Grass' *Blechtrommel* und das *Aargauer Tagblatt*. 
+
+---
+name: Blechtrommel
+
+<div class="blechtrommel2a">.</div>
+<div class="blechtrommel1a">.</div>
+
+
+???
+
+**Die Blechtrommel**
+
+Grass' Erstlingsroman (1959) übte einen großen Einfluss auf Burger aus (eigene Schreibversuche ab Mitte 1963, Abbruch des Architekturstudiums im Frühling 1965, ausgedehnte Reise auf den Spuren der *Blechtrommel* durch Polen und die DDR 1969). Verschiedene Motive des *Lokalberichts* verweisen auf die *Blechtrommel*.
+
+**Aargauer Tagblatt**
+Nach der *Blechtrommel*-Reise im Sommer 1969 beginnt Burger mit einer Sammelaktion, die er nahezu ein Jahr lang ziemlich systematisch fortsetzt. Er reißt die Lokalseiten zu Aarau aus dem *Aargauer Tagblatt* heraus und bewahrt sie auf.
+
+Als das Ehepaar Mitte Juli 1970 in Urlaub nach Calascino fährt, haben sie eine kleine Schriftstellerwerkstatt im Kofferraum: die Hermes Media 3, die Sammlung der *Tagblatt*-Lokalseiten und (vermutlich) dessen aktuellste Wochenendausgabe, verschiedene Bücher, darunter die *Blechtrommel* und schließlich das Typoskript einer Novelle und die ersten Seiten des unlängst begonnenen *Lokalberichts*.
+
+Auf der Rückreise werden es das weitgehend vollständige Romantyposkript sein, nach Burgers Einschätzung ist es aber noch keineswegs ein fertiger Roman.
+
+---
+name: Calascino2
+background-image: url(images/LD.FOTOCAL0.0010.png)
+background-size: contain
+
+
+.horizontalElementCalascino-1a[<a href="http://www.lokalbericht.ch/orte/LB.OFACT.CALASCINO#LB.OFACT.CALASCINO" target="_blank"/>Calascino sopra Gadero</a>]
+
+.horizontalElementCalascino-1b[Juli/August 1970]
+
+.horizontalElementCalascino-1e[Hermes Media 3]
+
+???
+
+**Hermes Media 3**
+
+Zwei Tage vor der Fahrt nach Calascino im Sommer 1970 kauft sich Hermann Burger eine neue Schreibmaschine.
+
+---
+name: Maschinenwechsel
+background-image: url(images/LB.TEIL1.0100.png)
+
+.headElementLeft[Typoskript *Lokalbericht*, S. 10 
+
+(o.D., SLA, Nachlass Hermann Burger, Schachtel 05, Sig. A-01-b)]
+
+<div class="hermesquittung">.</div>
+
+???
+
+Dieses reale Ereignis baut er – was für den gesamten Text charakteristisch ist – gleichsam in Echtzeit in die Fiktion ein, indem er die Anschaffung der Hermes Media 3 und der Olivetti Valentine thematisiert.
+
+Wie das Typoskript zeigt, korrespondiert mit der geschilderten Schreib-Szene in der Tat ein Wechsel von der remponierten älteren Olivetti auf die neue Hermes Media 3.
+
+Dabei greift Burger mit der akribischen Beschreibung der Maschinen auf eine bereits zwei Jahre zuvor im Typoskript ["Schreibmaschine"](http://www.lokalbericht.ch/AT.SCHREIBMASCH0.0010-d) entwickelte Idee zurück.
+
+---
+name: Romanhandwerk
+background-image: url(images/AT.ROMANHAND0.0010.png)
+background-size: contain
+
+.horizontalElementRomanhandwerk[.blockquote[
+Das Romanhandwerk ist ein Puzzle-Spiel, man beginnt mit dem Anfertigen kleiner Einzelteile, malt ein paar gelungene Details, ohne auch nur eine Ahnung vom Ganzen zu haben. Mit der Zeit ergibt sich das grosse Bild, und dann geht man auf die Suche nach den fehlenden Teilen.]]
+
+        
+.footElementLeft[Typoskript *Romanhandwerk* 
+
+(o.D., SLA, Nachlass Hermann Burger, Schachtel 03, Sig. A-01-a)]
+
+???
+
+**Der poetologische Kern des Romans**
+
+So wie Burger das Romanhandwerk hier um 1968 beschreibt, agiert er auch in seiner Schreibwut im Sommer 1970. Nach Jahren der (z.T. wohl unbewussten) Vorbereitung fallen auf einmal viele Stränge zusammen. 
+
+Burger bedient sich des gesammelten Materials und fügt den entstehenden Text im Eiltempo als eine Art Mosaik aus älteren Bausteinchen zusammen.
+
+
+---
+name: Lokalbericht
+background-image: url(images/LB.TEIL1.0760.png)
+background-size: contain
+
+.horizontalElementLokalbericht[.blockquote[
+        Der Lokalredaktor Barzel ist in meinen Augen der glücklichste, weil unbewussteste Schriftsteller der Welt. Er trägt ein riesiges Mosaik aus kleinsten, buntesten Steinchen zusammen[,] ohne an die Illusion eines Gesamtplanes zu glauben.]]
+
+.footElementLeft[Typoskript *Lokalbericht* 
+
+(o.D., SLA, Nachlass Hermann Burger, Schachtel 05, Sig. A-01-b)]
+
+???
+
+Auch ins Romantyposkript fließt dieses hervorragende poetologische Motiv ein, beispielhaft in der Person des Lokalredaktors Barzel und dessen Redaktionsarbeit.
+
+Dieses Verfahren, Texte als kunterbuntes Mosaik aus fremden Textbausteinchen zu konzipieren, kommt im *Lokalbericht* erstmals und noch verhältnismäßig ungehobelt zu Tragen.
+
+Nach 1970 wird er sich mit diesem Verfahren – im Verbund mit der „Verfremdung zur Kenntlichkeit“ – auf originelle Weise in der deutsch(schweizerisch)en Literaturszene in Stellung bringen.
+
+---
+name: Inhaltsübersicht
+background-image: url(images/LB.INHALTUETS1.0010.png)
+background-size: contain
+
+.horizontalElementBarzel[ ]
+
+.footElementRight[Typoskript *Inhaltsübersicht*
+
+(o.D., in: SLA, Nachlass Hermann Burger)]
+
+---
+name: StemmatischerUeberblick
+background-image: url(images/LB_Stemma_20160830.png)
+background-size: contain
+
+# [*Dossier génétique*](#Ueberblick)
+
+.footElementRight[http://purl.org/lokalbericht/dossier]
+
+???
+
+Diese schematische Darstellung führt alle literarischen Texte aus Burgers Nachlass auf, die mit dem Lokalbericht in engem Zusammenhang stehen. 
+
+Es wurde hauptsächlich zur Darstellung der genetischen Situation in der Druckausgabe konzipiert, ist aber auch Bestandteil der digitalen Edition. Letztere geht aber durch die Darstellung von Bezügen auf Blattebene weiter und bietet einen höheren Informationsgehalt.
+
+--
+
+name: Editionsprojekt2
+background-image: url(images/LB_Stemma_Illusion_20160830.png)
+
+---
+name: Editionsprojekt
+
+# [Das Editionsprojekt](#Ueberblick)
+
+- 178 Romantyposkriptseiten
+
+- hauptsächlich einseitig beschrieben
+
+- wenig hand- und maschinenschriftliche Korrekturen
+
+- *Avant textes*: viele Vorstufen der 'Mosaiksteine'
+        
+- insgesamt rund 900 Dokumente
+
+- umfangreiche Kontextmaterialien (Zeitungsseiten, Briefe, Schemata u. m.)
+
+???
+
+**Eckdaten zum Editionsprojekt**
+
+* Ausgangslage
+
+ - **178 Romantyposkriptseiten**
+ - hauptsächlich **einseitig beschrieben**
+ - **wenig hand- und maschinenschriftliche Korrekturen**
+ - *Avant textes*: **viele Vorstufen** der 'Mosaiksteine'
+ - insgesamt rund **900 Dokumente**
+ - umfangreiche **Kontextmaterialien** (Zeitungsseiten, Briefe, Schemata u. m.)
+
+--
+---   
+
+- Hybrid-Edition mit digitalem Schwerpunkt
+
+ - Faksimile
+ - diplomatisch<!-- -topographisch -->e Transkriptionen
+ - Lesefassung
+ - Kommentar
+
+- Druckausgabe (illustrierte Lesefassung mit ausführlichem Überblickskommentar)
+
+???
+
+* Hybride Edition mit digitalem Schwerpunkt
+ - Faksimile
+ - diplomatisch<!-- -topographisch -->e Transkriptionen
+ - Lesefassung
+ - Kommentar
+
+---
+name: Editionsprojekt
+background-image: url(images/LB_Print.png)
+class: top
+
+# [Das Editionsprojekt](#Ueberblick)
+
+.horizontalElementTeam[        
+**Projektleitung**: 
+
+PD Dr. Irmgard Wirtz, Leiterin SLA 
+
+**Philologie**: 
+
+Dr. Simon Zumsteg und Dr. Magnus Wieland (SLA)
+
+**Beratung**: 
+
+Dr. Patrick Sahle, Dr. Franz Fischer, Peter Dängeli (CCeH)
+
+**Technische Realisierung**: 
+
+Peter Dängeli, Christian Theisen, Bernhard Strecker (CCeH)
+
+**Projektdauer**: 
+
+2013 &ndash; 2016
+]
+
+???
+
+**Eckdaten (personell/institutionell)**
+
+* 120 Stellenprozente
+* 36 Monate
+
+---
+name: lokalbericht.ch
+background-image: url(images/LB_Lokalbericht.png)
+background-size: contain
+
+# [Digitale Edition](#Ueberblick)
+
+???
+
+**Kurze Rekapitulation**
+
+* **Mosaik aus Textbausteinen**, die über zehn Jahre verfasst wurden und systematisch gesammelt wurden
+* **Schreibmarathon** im Sommer 1970
+* sehr **dichtes Netzwerk** von fiktiven und realen Personen, Orten und Werken im Romantext
+* vielfältige **Zusatzmaterialien** dank Burgers Sammelleidenschaft und Simon Zumstegs akribischer Forschungsarbeit
+
+**Wie lässt sich dies digital lesbar, zugänglich und verständlich machen?**
+
+---
+name: Stolpersteine
+layout: false
+
+# [Ausgewählte Probleme](#Ueberblick)
+
+1. ## [Datenstruktur (TEI)](#DokumentTextzentrierung)
+1. ## [Textgenetik: Mikroebene](#Mikrogenetisch1)
+1. ## [Textgenetik: Makroebene](#Makrogenetisch)
+
+<!--
+
+layout: false
+name: DokumentTextzentrierung
+            
+# [#1](#Ueberblick): Datenstruktur
+
+<table>
+  <tr>
+      <td>editions</td>
+      <td></td>
+      <td><a href="http://4.bp.blogspot.com/-6F3f_DSibac/UfponoZrKWI/AAAAAAAAC0g/hFy2W6G3nPk/s1600/docs-theories.tiff"><img src="images/Pierazzo_DSEstrataE.jpg" alt="Editions" width="660"/></a></td>
+  </tr>
+  <tr>
+      <td>theories</td>
+      <td/>
+      <td><a href="http://2.bp.blogspot.com/-3Oh14ZQ-spA/UfpotiLmOpI/AAAAAAAAC0o/lSQiGB6H5Gg/s1600/docs-editions.tiff"><img src="images/Pierazzo_DSEstrataT.jpg" alt="Theories" width="660"/></a></td>
+    </tr>
+</table>
+
+.footElementLeft[Elena Pierazzo, *Digital Scholarly Editing: Theories, Models and Methods*, 2014, S. 60 (http://hal.univ-grenoble-alpes.fr/hal-01182162).]
+
+.bottomElementRight[[>](#Mikrogenetisch1)]
+
+-->            
+???
+
+Drei wesentliche Aspekte (TEI, Mikrogenese, Makrogenese)
+
+---
+
+name: TEI-Struktur
+background-image: url(images/BohnenkampBrueningEtAl.png)
+
+# [#1](#Ueberblick): Datenstruktur
+
+.footElementLeft[Bohnenkamp, Brüning et al., Perspektiven auf Goethes ›Faust‹. Werkstattbericht der historisch-kritischen Hybridedition, *Jahrbuch des Freien Deutschen Hochstifts*, 2011, S. 48.]
+
+???
+
+**Text vs. Dokument**
+
+Text- und Dokumentstruktur sind nicht das gleiche. Beim Beschreiben eines Texts wollen wir z.B. wissen, was ein Kapitel oder ein Absatz ist. Aus Dokumentperspektive interessieren dagegen etwa die einzelnen Zeilenumbrüche.
+
+Ein Beispiel aus einem anderen Projekt zur Veranschaulichung.
+
+Dargestellt sind zwei Perspektiven auf drei Verse, die in einer bestimmten Reihenfolge und an bestimmten Stellen auf dem Textträger niedergeschrieben wurden, und eine dritte Perspektive, die auf die zeitliche Abfolge blickt.
+
+---
+name: TEI-Struktur
+# [#1](#Ueberblick): Datenstruktur
+
+<table>
+    <tr>
+        <td>Eingebettetes Encoding</td>
+        <td width="30"></td>
+        <td align="right">Parallel-Encoding</td>
+    </tr>
+    <tr>
+        <td><img src="images/LB_EmbeddedEncoding.png" alt="Embedded encoding" title="Embedded encoding" width="350"></img></td>
+        <td/>
+        <td><img src="images/LB_ParallelEncoding.png" alt="Parallel encoding" title="Parallel encoding" width="350"></img></td>
+    </tr>
+    <tr>
+      <td>cf. <a href="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/PH.html#PHZLAB" target="_blank">TEI P5, 11.2.2</td>
+      <td></td>
+      <td align="right">cf. <a href="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/PH.html#PH-bov" target="_blank">TEI P5, 11.2.1</td>
+    </tr>
+</table>
+
+???
+
+* TEI P5, Kapitel 11, *Representation of Primary Sources*
+
+    * 11.2 *Combining Transcription with Facsimile*
+
+        * 11.2.1 *Parallel Transcription*
+        * 11.2.2 *Embedded Transcription*
+
+Im Lokalbericht-Projekt haben wir uns für ein eingebettetes Encoding entschieden. Wir folgten der Prämisse, das Dokument möglichst präzise zu beschreiben und – ausgehend von dieser Beschreibung – durch eingestreute Signale (TEI-Milestones) das Textencoding automatisiert zu generieren.
+
+Dieser Ansatz funktionierte gut, da die vorliegenden Typoskriptseiten (und Briefe) sehr regelmäßig strukturiert sind und in aller Regel den Textfluss abbilden. 
+
+Bei hand- oder maschinenschriftliche Entwürfe mit vielen Marginalien und nachträglichen Umstellungen (*transpositions*) käme das gewählte System jedoch an die Grenzen.
+
+---
+
+name: Datenstruktur
+# [#1](#Ueberblick): Datenstruktur
+
+<!-- Verfolgter Ansatz:  -->
+
+In die Text-Encodings werden lediglich Anker eingesetzt:
+         
+```xml
+<anchor xml:id="LB.TEIL1.0320.typearea.0.L26.1"/>         
+```
+         
+Die eigentlichen Bereiche sind an anderer Stelle definiert (*stand off*):
+         
+```xml
+<spanGrp xml:id="spanGrp_00259" type="namedEntity" resp="#LB-Team-SZ">
+    <span from="LB.TEIL1.0320.typearea.0.L26.1" to="LB.TEIL1.0320.typearea.0.L26.2"/>
+</spanGrp>
+```
+
+Dort aufgezeichnete Bereiche lassen sich mit anderen Dateneinheiten verbinden (hier z.B. dem Eintrag des fiktiven [Prof. E. Kleinert](http://www.lokalbericht.ch/personen/LB.PFICT.KLEINE#LB.PFICT.KLEINE)): 
+         
+```xml         
+<linkGrp xml:id="linkGrp_00259" targFunc="goal source(s)" type="person">
+    <link target="#LB.PFICT.KLEINE #spanGrp_00259"/>
+</linkGrp>
+```
+
+Dieses Modell wird vorab für die Auszeichnung von Personen, Orten und Werken angewandt, die als Registereinträge mit Normdatenverweisen angelegt sind. 
+
+Auch dokumentübergreifende (textgenetische) Beziehungen ließen sich auf diese Weise in beliebiger Granularität abbilden.
+
+???
+
+**Datenstruktur**
+
+Als Folge dieses grundlegenden Entscheides mussten alle Verknüpfungen, seien es textgenetische Verwandtschaften oder Bezüge auf Personen, Orte oder Werke, als Anker an der entsprechenden Stelle in den Encodings ausgezeichnet werden.
+
+Die eigentlichen Bezugspunkte, z.B. ein Autoritäseintrag zu einer Person, stehen in einer Liste in einer anderen Datei.
+
+Die Tatsache, dass es zwischen einer Textstelle und einem Autoritätseintrag einen Bezug gibt, wird in einer zentralen Liste aufgezeichnet (durch `linkGrp` und `spanGrp`).
+
+Zwei Caveats:
+
+* der Aufwand (Zeit und Konzentration) für diese Codierung darf nicht unterschätzt werden, ein graphisches Tool wäre sehr hilfreich
+
+* das Auslesen der Daten ist relativ rechenintensiv
+
+---
+name: Mikrogenetisch1
+background-image: url(images/LD.TUSCULUM1.0010A.png)
+background-size: contain
+
+# [#2](#Ueberblick): Textgenetik: Mikroebene
+
+
+<img src="images/LD.TUSCULUM1.0010.png"
+      style="position: absolute;
+      top: 275px;
+      background:rgba(1,1,1,.5);      
+      color: white;
+      padding: 15px 15px;
+      left: 68px;
+      width: 742px;
+      line-height: 45px;"
+      title="Beispiel *Tusculum*"/>
+
+
+.footElementLeft[Typoskript *Tusculum*
+
+(o.D., in: SLA, Nachlass Hermann Burger, Schachtel 62/1, Sig. A-6-Datiertes)]
+         
+.bottomElementRight[[>](#Makrogenetisch)]
+
+???
+**Mikrogenese**
+
+---
+name: Mikrogenetisch2
+
+# [#2](#Ueberblick): Textgenetik: Mikroebene
+
+![Beispiel *Tusculum*](images/LD.TUSCULUM1.0010.png)
+``` xml
+<line>immer aufbruchsbereit zu bleiben. Die Distanzen vergröss<choice>
+    <orig><hi rend="effect_typebarimpression_25">e</hi></orig>
+    <reg resp="#LB-MW"/>
+</choice>ern sich von
+</line>
+<line>Jahrgang zu Jahrgang. Ein wirklich junger Lehrer wäre eine c<mod type="corr">
+    <sic/>
+    <add type="corr" hand="HB" rend="tool_ballpen color_blue" place="above">o</add>
+    <reg type="reg" resp="#LB-MW">o</reg>
+</mod>ntradict<choice>
+    <sic/>
+    <reg type="reg" resp="#LB-MW">i</reg>
+</choice>o
+</line>
+<line>in adjecto, weil Lehren an für sich eher zur Erstarrung als zur</line>
+<line>chaotischen Auflösung führt. Der Lehrer müs<mod type="corr">
+    <sic cert="low">r</sic>
+    <add rend="place_overtyped">s</add>
+    <reg>s</reg>
+</mod>te durch den Computer <choice>
+    <orig>er-</orig>
+    <reg>ersetzt</reg>
+</choice>
+</line>
+<line><choice>
+    <orig>setzt</orig>
+    <reg/></choice> werden, damit der Schüler im Umgang mit Persönlichkeiten menschlich
+</line>
+```
+???
+
+Mikrogenetische Phänomene wurden als Modifikationen `tei:mod` oder Alternativen (`tei:choice`) ausgezeichnet.
+
+Je nach Zweck kann das Rendering diese Strukturen unterschiedlich verarbeiten.
+
+Der Aufwand dieser Auszeichnungsarbeit steht in einem etwas ungünstigen Verhältnis zum Nutzen in der Druckausgabe und der digitalen Edition. Eine schlankere Auszeichnung, die es erlauben würde, einen regularisierten Lesetext zu extrahieren, genetische Phänomene aber nicht detailliert berücksichtigen würde, wäre im Nachhinein ein pragmatischerer Ansatz gewesen.
+
+---
+name: Makrogenetisch
+# [#3](#Ueberblick): Textgenetik: Makroebene
+
+<!-- Verfolgter Ansatz:  -->
+
+Verknüpfung auf Blattebene über den Identifikator des Blattes, wobei der genetische Vorläufer an erster Stelle und die späteren Verarbeitungen dahinter gereiht werden:
+
+```xml
+<linkGrp xml:id="macrolinkGrp_00006" targFunc="goal source(s)" type="geneticPath">
+        <link target="#AT.ERSCHREIBT1.0010 #LB.TEIL1.0170 #LB.TEIL1.0190" xml:id="macrolinkGrp_00006_1"/>
+</linkGrp>
+    
+<linkGrp xml:id="macrolinkGrp_00007" targFunc="goal source(s)" type="geneticPath">
+        <link target="#AT.ERSCHREIBT1.0020 #LB.TEIL2.1100 #LB.TEIL3.2040" xml:id="macrolinkGrp_00007_1"/>
+</linkGrp>
+```
+
+<!-- <img src="images/LB.TEIL2.1460.png"
+      class="jump" 
+      style="position: absolute;
+      top: 325px;
+      /*background:rgba(1,1,1,.5);      */
+      color: white;
+      padding: 15px 15px;
+      left: 468px;
+      width: 400px;
+      -webkit-transform: rotate(10deg);
+      -moz-transform: rotate(10deg);
+      -ms-transform: rotate(10deg);
+      -o-transform: rotate(10deg);
+      transform: rotate(10deg);"
+      title="Teil I, S. 146"/> -->
+
+<img src="images/LB.TEIL1.0190.png"
+      class="jump" 
+      style="position: absolute;
+      top: 335px;
+      /*background:rgba(1,1,1,.5);      */
+      color: white;
+      padding: 15px 15px;
+      left: 430px;
+      width: 400px;
+      -webkit-transform: rotate(-12deg);
+      -moz-transform: rotate(-12deg);
+      -ms-transform: rotate(-12deg);
+      -o-transform: rotate(-12deg);
+      transform: rotate(-12deg);"
+      title="Teil I, S. 19"/> 
+
+<img src="images/LB.TEIL1.0170.png"
+      class="jump" 
+      style="
+      position: absolute;
+      top: 370px;
+      /*background:rgba(1,1,1,.5);      */
+      color: white;
+      padding: 15px 15px;
+      left: 360px;
+      width: 400px;
+      -webkit-transform: rotate(9deg);
+      -moz-transform: rotate(9deg);
+      -ms-transform: rotate(9deg);
+      -o-transform: rotate(9deg);
+      transform: rotate(9deg);"
+      title="Teil I, S. 17"/>
+
+<img src="images/AT.ERSCHREIBT1.0010.png"
+      style="position: absolute;
+      top: 323px;
+      /*background:rgba(1,1,1,.5);      */
+      color: white;
+      padding: 15px 15px;
+      left: 52px;
+      height: 600px;
+      -webkit-transform: rotate(-5deg);
+      -moz-transform: rotate(-5deg);
+      -ms-transform: rotate(-5deg);
+      -o-transform: rotate(-5deg);
+      transform: rotate(-5deg);"
+      title="Er schreibt"/>
+
+???
+
+Der Bereich der Makrogenese erwies sich im Verlauf des Projektes als der interessanteste und für das Verständnis der Textgenese erhellendste.
+
+Weil das physische Blatt in Burgers Arbeits- und Montageweise eine entscheidende Rolle spielt, verwendeten wir diese Einheit zum Erfassen der makrogenetischen Bezüge. Grundsätzlich könnten Bezüge auf beliebiger Ebene unterhalb des Blattes angelegt werden, der Aufwand für eine konsistente Bearbeitung wäre aber beträchtlich.
+
+---
+name: Digitale Edition
+background-image: url(images/LB_ErSchreibt_Teil1a.png)
+background-size: contain
+
+.lokalbericht-ch-nav[]
+.lokalbericht-ch-corenav[]
+.lokalbericht-ch-corel[]
+.lokalbericht-ch-corer[]
+.lokalbericht-ch-navr[]
+.lokalbericht-ch-quot[]
+<a class="lokalbericht-ch-visnav" href="http://www.lokalbericht.ch/synopsis/AT.ERSCHREIBT1.0010-t/LB.TEIL1.0170-t#lb-birdseye" target="_blank"></a>
+
+.footElementLeft[<a href="http://www.lokalbericht.ch/synopsis/AT.ERSCHREIBT1.0010-t/LB.TEIL1.0170-t" target="_blank">lokalbericht.ch/synopsis/AT.ERSCHREIBT1.0010-t/LB.TEIL1.0170-t</a>]
+
+???
+
+**Organisation und Struktur der digitalen Edition**
+
+---
+name: Werkzeugauswahl
+
+# [Werkzeugauswahl: bestimmende Faktoren](#Ueberblick)
+
+* begrenzte Personalressourcen für die technische Umsetzung<br/>
+<span style="opacity: 0.5;">40%-Stelle, 36 Monate</span>
+
+* Zielumgebung unbekannt<br/>
+<span style="opacity: 0.5;">technisch – institutionell – personell</span>
+
+* angestrebte Nachhaltigkeit<br/>
+<span style="opacity: 0.5;">Reduktion der Komplexität</span>
+
+* Charakterisierung der Daten<br/>
+<span style="opacity: 0.5;">eher Text- als Datenbankcharakter, überschaubare Datenmenge</span>
+
+* Persönliche Vorkenntnisse und Vorlieben
+
+???
+
+**Werkzeugauswahl: bestimmende Faktoren**
+
+---
+name: Technologie
+    
+# [Technologien](#Ueberblick)
+
+##### [Kiln](https://github.com/kcl-ddh/kiln) 
+<div style="position: absolute; top: 145px; left: 180px; font-size: small;"><a href="https://github.com/kcl-ddh/kiln">https://github.com/kcl-ddh/kiln</a> .remark-inline-code[Apache License 2.0]</div>
+
+ * [**Apache Cocoon 2.1**](http://cocoon.apache.org/2.1/) (XSL-Pipelines) .remark-inline-code[Apache License 2.0]
+ * [**Apache Ant**](http://ant.apache.org) (Build-Tool) .remark-inline-code[Apache License 2.0]
+ * [**Apache Solr**](http://lucene.apache.org/solr/) (Suche) .remark-inline-code[Apache License 2.0]
+ * [**Jetty**](http://www.eclipse.org/jetty/) (Webserver) .remark-inline-code[Apache License 2.0 / Eclipse Public License 1.0]
+ * <span style="opacity: 0.5">[**Sesame 2**](https://en.wikipedia.org/wiki/Sesame_(framework) (RDF) .remark-inline-code[Aduna BSDLicense]</span>
+
+##### Bilddaten
+
+ * [**IIPImage**](https://github.com/iipimage) (Tile-Server) .remark-inline-code[GNU GPL]
+ * [**OpenSeadragon**](https://openseadragon.github.io) (Einbindung) .remark-inline-code[New BSD]
+
+##### CSS/JS
+
+* [**Foundation 6.3**](https://github.com/zurb/foundation-sites) (SASS) .remark-inline-code[MIT License]
+
+##### Datenvisualisierung
+
+* [**D3.js**](https://d3js.org) – .remark-inline-code[BSD License]
+
+???
+
+**Eingesetzte Technologien**
+
+---
+name: Kiln
+background-image: url(images/LB_KILN.png)
+background-size: 90%
+
+# Kiln
+
+???
+
+**Kiln**
+
+---
+name: Nachhaltigkeit
+
+# [Nachhaltigkeitsaspekte](#Ueberblick)
+
+* Voraussetzungen: siehe [vorne](#Werkzeugauswahl)
+
+* Strategien
+
+ * offene Standards und Werkzeuge
+ * Portabilität
+ * minimaler Wartungsaufwand 
+ * [Ressourcenbeschreibung / Factsheet](#DCH)
+
+## Nachhaltigkeit und **Performanz**
+
+* Generierung von statischem HTML
+
+ * rund 15'000 Dateien, direkt durch Apache ausgeliefert (4 GB)
+ * das umfasst alles außer die synoptischen Ansichten<br/>
+ <span style="opacity: 0.5;">ansonsten vierhundertfaches Volumen</span>
+ * Kiln: statische Builds mit *wget*<br/>
+ `$ ./build.sh lb-static`
+
+???
+
+**Nachhaltigkeitsaspekte/Performanz**
+
+---
+name: DCH
+
+<h1 style="position: absolute; top: -15px; z-index: 99">Factsheet</h1>
+
+<div style="position: relative; left: -30px; top:-15px; z-index: 0">
+
+<img src="images/DCH3.png"
+      class="jump" 
+      style="position: absolute;
+      top: 75px;
+      color: white;
+      left: 468px;
+      width: 600px;
+      box-shadow: 1px 1px 5px #888888;
+      -webkit-transform: rotate(10deg);
+      -moz-transform: rotate(10deg);
+      -ms-transform: rotate(10deg);
+      -o-transform: rotate(10deg);
+      transform: rotate(10deg);"
+      title="DCH-Fragebogen"/>
+
+<img src="images/DCH2.png"
+      class="jump" 
+      style="position: absolute;
+      top: -15px;
+      color: white;
+      left: 220px;
+      width: 600px;
+      box-shadow: 1px 1px 5px #888888;
+      -webkit-transform: rotate(-5deg);
+      -moz-transform: rotate(-5deg);
+      -ms-transform: rotate(-5deg);
+      -o-transform: rotate(-5deg);
+      transform: rotate(-5deg);"
+      title="DCH-Fragebogen"/> 
+
+<img src="images/DCH1.png"
+      style="
+      position: absolute;
+      top: -65px;
+      /*color: white;*/
+      left: 20px;
+      width: 600px;
+      box-shadow: 1px 1px 5px #888888;
+      -webkit-transform: rotate(-15deg);
+      -moz-transform: rotate(-15deg);
+      -ms-transform: rotate(-15deg);
+      -o-transform: rotate(-15deg);
+      transform: rotate(-15deg);"
+      title="DCH-Fragebogen"/>
+      </div>
+
+???
+
+**DCH**
+
+---
+name: Diskussion
+layout: false
+background-image: url(images/ErSchreibt.jpg)
+
+#[Vielen Dank für die Aufmerksamkeit](#Ueberblick)
+
+---
+name: Literatur
+
+# [Literatur](#Ueberblick)
+
+<div class="bibtex" id="bibtex_display"></div>
+
+---
+layout: true            
+# Slide
+
+- bullet 1
+--
+layout: true
+- bullet 2
+
+    </textarea>
+    <!--bibtex-->
+    <textarea id="bibtex_input" style="display:none;">
+
+
+%% This BibTeX bibliography file was created using BibDesk.
+%% http://bibdesk.sourceforge.net/
+
+%% Created for Lokalbericht at 2017-02-15 14:47:02 +0100 
+
+
+%% Saved with string encoding Unicode (UTF-8) 
+
+@article{CatonVieira_TheKilnXMLPublishingFramework,
+      Author = {Caton, Paul and Vieira, Miguel},
+      Date-Added = {2016-09-21 10:29:52 +0000},
+      Date-Modified = {2016-09-21 10:31:35 +0000},
+      Journal = {Proceedings of XML In, Web Out: International Symposium on sub rosa XML},
+      Title = {The Kiln XML Publishing Framework},
+      Doi = {10.4242/BalisageVol18.Caton01},
+      Url = {http://www.balisage.net/Proceedings/vol18/html/Caton01/BalisageVol18-Caton01.html},
+      Volume = {18},
+      Year = {2016}}
+
+@conference{Hanrahan_2015_OvertaggingWithXML,
+      Address = {Graz},
+      Author = {Hanrahan, Elise},
+      Booktitle = {DHd 2015 - Abstracts},
+      Date-Added = {2015-02-26 12:04:30 +0100},
+      Date-Modified = {2015-02-26 12:17:00 +0100},
+      Month = {Februar},
+      Organization = {Digital Humanities im deutschsprachigen Raum},
+      Title = {`Over-tagging' with XML in Digital Scholarly Editions},
+      Url = {https://www.conftool.pro/dhd2015/index.php?page=browseSessions&form_session=29},
+      Year = {2015}}
+
+@article{Haentjens-DekkerHulleMiddell_2014_Computer-supportedCollationOfModernManuscripts,
+      Author = {Haentjens Dekker, Ronald and van Hulle, Dirk and Middell, Gregor and Neyt, Vincent and van Zundert, Joris},
+      Date-Added = {2015-04-17 16:06:02 +0200},
+      Date-Modified = {2015-04-17 16:06:32 +0200},
+      Doi = {10.1093/llc/fqu007},
+      Isbn = {2055-768X},
+      Issn = {2055-7671},
+      Journal = {Digital Scholarship in the Humanities},
+      Publisher = {The Oxford University Press},
+      Title = {Computer-supported collation of modern manuscripts: CollateX and the Beckett Digital Manuscript Project},
+      Year = {2014}}
+
+@article{Pierazzo_2014_DigitalDocumentaryEditionsAndTheOthers,
+      Author = {Pierazzo, Elena},
+      Date-Added = {2014-08-31 19:25:40 +0000},
+      Date-Modified = {2014-08-31 19:26:58 +0000},
+      Journal = {Scholarly Editing: The Annual of the Association for Documentary Editing},
+      Title = {Digital Documentary Editions and the Others},
+      Url = {http://www.scholarlyediting.org/2014/essays/essay.pierazzo.html},
+      Volume = {35},
+      Year = {2014}}
+
+@unpublished{Pierazzo_2014_DigitalScholarlyEdition,
+      Author = {Pierazzo, Elena},
+      Date-Added = {2015-12-02 12:09:50 +0000},
+      Date-Modified = {2015-12-02 12:11:40 +0000},
+      Hal_Id = {hal-01182162},
+      Hal_Version = {v1},
+      Keywords = {Digital Humanities ; Philology ; Digital Editing ; Scholarly editing},
+      Month = Sep,
+      Note = {working paper or preprint},
+      Pdf = {http://hal.univ-grenoble-alpes.fr/hal-01182162/file/DSE-revised-29sept2014.pdf},
+      Title = {{Digital Scholarly Editing: Theories, Models and Methods}},
+      Url = {http://hal.univ-grenoble-alpes.fr/hal-01182162},
+      Year = {2014}}
+
+@article{PortelaRito-Silva_2014_AModelForAVirtualLdoD,
+      Author = {Portela, Manuel and Rito Silva, Ant{\'o}nio},
+      Date-Added = {2015-04-17 16:02:48 +0200},
+      Date-Modified = {2015-04-17 16:03:18 +0200},
+      Doi = {10.1093/llc/fqu004},
+      Isbn = {2055-768X},
+      Issn = {2055-7671},
+      Journal = {Digital Scholarship in the Humanities},
+      Publisher = {The Oxford University Press},
+      Title = {A model for a virtual LdoD},
+      Year = {2014}}
+
+@proceedings{SchweizerRosenthaler_2012_BuildingDigitalEditionsOnTheBasisofaVirtualResearchEnvironment,
+      Address = {Sheffield},
+      Author = {Schweizer, Tobias and Rosenthaler, Lukas},
+      Date-Added = {2014-08-31 19:49:54 +0000},
+      Date-Modified = {2014-08-31 19:52:54 +0000},
+      Editor = {Mills, Clare and Pidd, Michael and Ward, Esther},
+      Journal = {Proceedings of the Digital Humanities Congress 2012. Studies in the Digital Humanities},
+      Organization = {HRI Online Publications},
+      Title = {Building Digital Editions on the Basis of a Virtual Research Environment},
+      Url = {http://www.hrionline.ac.uk/openbook/chapter/dhc2012-schweizer},
+      Year = {2014}}
+
+@article{BrueningHenzelPravida_2013_Multiple-Encoding-in-Genetic-Editions,
+      Abstract = {Online since 08 March 2013    },
+      Author = {Br{\"u}ning, Gerrit and Henzel, Katrin and Pravida, Dietmar},
+      Date-Added = {2013-04-16 09:32:23 +0200},
+      Date-Modified = {2013-04-16 14:18:50 +0200},
+      Doi = {10.4000/jtei.697},
+      Journal = {Journal of the Text Encoding Initiative [Online]},
+      Number = {4},
+      Title = {Multiple Encoding in Genetic Editions: The Case of "Faust"},
+      Url = {http://jtei.revues.org/697},
+      Year = {2013}} 
+
+@webpage{Cayless_2013_RebootingTEIPointers,
+      Abstract = {DOI : 10.4000/jtei.907},
+      Author = {Cayless, Hugh A.},
+      Date-Added = {2014-09-01 09:18:15 +0000},
+      Date-Modified = {2014-09-01 09:19:04 +0000},
+      Journal = {Journal of the Text Encoding Initiative},
+      Title = {Rebooting TEI Pointers},
+      Url = {http://jtei.revues.org/907},
+      Volume = {6},
+      Year = {2013}}
+
+@article{Gabler_2013_EditingTextEditingWork,
+      Author = {Gabler, Hans Walter},
+      Date-Added = {2014-08-31 20:29:30 +0000},
+      Date-Modified = {2014-08-31 20:31:09 +0000},
+      Journal = {Ecdotica},
+      Pages = {42-49},
+      Title = {Editing Text - Editing Work},
+      Volume = {10},
+      Year = {2013}}
+
+@inproceedings{MunozVigliantiFraistat_2013_TextsAndDocuments,
+      Author = {Mu{\~n}oz, Trevor and Viglianti, Raffaele and Fraistat, Neil},
+      Booktitle = {The Linked TEI: Text Encoding in the Web. Book of Abstracts - electronic edition},
+      Date-Added = {2014-10-21 17:19:49 +0000},
+      Date-Modified = {2014-10-21 17:21:34 +0000},
+      Title = {Texts and Documents: new challenges for TEI interchange and the possibilities for participatory archives},
+      Year = {2013}}      
+
+@article{RehbeinGabler_2013_ReadingEnvironmentsForGeneticEditions,
+      Author = {Rehbein, Malte and Gabler, Hans Walter},
+      Date-Added = {2014-03-18 16:39:18 +0100},
+      Date-Modified = {2014-03-18 16:41:50 +0100},
+      Journal = {Scholarly and Research Communication},
+      Number = {3},
+      Title = {Reading Environments for Genetic Editions},
+      Url = {http://src-online.ca/index.php/src/article/view/123},
+      Volume = {4},
+      Year = {2013}}
+
+@phdthesis{Sahle_2013_DigitaleEditionsformen,
+      Address = {Norderstedt},
+      Author = {Sahle, Patrick},
+      Date-Added = {2014-08-31 20:48:17 +0000},
+      Date-Modified = {2014-08-31 20:57:13 +0000},
+      School = {Universit{\"a}t zu K{\"o}ln},
+      Title = {Digitale Editionsformen. Zum Umgang mit der {\"U}berlieferung unter den Bedingungen des Medienwandels},
+      Volume = {1-3},
+      Year = {2013}}
+
+@article{Gabler_2012_TextNotManuscriptTranscriptions,
+      Abstract = {DOI 10.1353/jjq.2012.0040},
+      Author = {Gabler, Hans Walter},
+      Date-Added = {2014-08-31 20:23:44 +0000},
+      Date-Modified = {2014-08-31 20:27:40 +0000},
+      Journal = {James Joyce Quarterly},
+      Number = {3-4},
+      Pages = {655-665},
+      Title = {"Text (Not Manuscript) Transcriptions: Stepping-Stones to the Dublin Ulysses Papers." Review Essay on: James Joyce, The Dublin Ulysses Papers. 6 vols. Revised Edition. Edited & Annotated by Danis Rose. East Lansing, Michigan: House of Breathings, 2012.},
+      Volume = {49},
+      Year = {2012}}
+
+@incollection{Gabler_2012_WiderDieAutorzentriertheit,
+      Author = {Gabler, Hans Walter},
+      Booktitle = {Jahrbuch des freien deutschen Hochstifts},
+      Date-Added = {2014-08-31 18:50:09 +0000},
+      Date-Modified = {2014-08-31 18:54:03 +0000},
+      Pages = {316-348},
+      Publisher = {Bohnenkamp, Anne},
+      Title = {Wider die Autorzentriertheit in der Edition},
+      Year = {2012}}
+
+@article{Schmidt_2012_TheRoleOfMarkup,
+      Author = {Schmidt, Desmond},
+      Date-Added = {2014-08-31 12:49:30 +0200},
+      Date-Modified = {2014-08-31 18:57:16 +0000},
+      Journal = {Historical Social Research (=Historische Sozialforschung)},
+      Number = {3},
+      Pages = {124-146},
+      Title = {The Role of Markup in the Digital Humanities},
+      Volume = {37},
+      Year = {2012}}
+
+@mastersthesis{Sichani_2012_AuthorialPirouettes,
+      Author = {Sichani, Anna-Maria},
+      Date-Added = {2014-08-31 12:37:12 +0200},
+      Date-Modified = {2014-08-31 18:59:21 +0000},
+      School = {UCL, Department of Information Studies},
+      Title = {`Authorial pirouettes'. Authorial alterations in literary drafts: genetic criticism and electronic practices},
+      Year = {2012}}
+
+@article{Stadler_2012_NormdateienInDerEdition,
+      Author = {Stadler, Peter},
+      Date-Added = {2016-01-21 09:02:26 +0000},
+      Date-Modified = {2016-01-21 10:01:10 +0000},
+      Journal = {editio},
+      Pages = {174-183},
+      Title = {Normdateien in der Edition},
+      Volume = {26},
+      Year = {2012}}
+
+@article{WielandZumsteg_HermannBurgersLokalbericht,
+      Author = {Zumsteg, Simon and Wieland, Magnus},
+      Date-Added = {2013-06-18 12:00:05 +0200},
+      Date-Modified = {2013-06-18 12:03:00 +0200},
+      Journal = {Germanistik in der Schweiz},
+      Number = {9},
+      Pages = {91-109},
+      Title = {Hermann Burgers ‹Lokalbericht›. Von der Archivfiktion zur Archivedition},
+      Year = {2012}}
+
+@article{BohnenkampBrueningEtAl_2011_PerspektivenAufGoethesFaust,
+      Author = {Bohnenkamp, Anne and Br{\"u}ning, Gerrit and Henke, Silke and Henzel, Katrin and Jannidis, Fotis and Middell, Gregor and Pravida, Dietmar and Wissenbach, Moritz},
+      Date-Added = {2014-09-03 07:04:00 +0000},
+      Date-Modified = {2014-09-03 07:07:25 +0000},
+      Journal = {Jahrbuch des Freien Deutschen Hochstifts},
+      Pages = {23-67},
+      Title = {Perspektiven auf Goethes ›Faust‹. Werkstattbericht der historisch-kritischen Hybridedition},
+      Year = {2011}}      
+
+@article{Pierazzo_2011_A-rationale-of-digital-documentary-editions,
+      Annote = {10.1093/llc/fqr033},
+      Author = {Pierazzo, Elena},
+      Date = {2011/12/01},
+      Date-Added = {2013-04-16 14:18:29 +0200},
+      Date-Modified = {2013-04-16 14:18:29 +0200},
+      Doi = {10.1093/llc/fqr033},
+      Journal = {Literary and Linguistic Computing},
+      Month = {12},
+      Number = {4},
+      Pages = {463--477},
+      Title = {A rationale of digital documentary editions},
+      Ty = {JOUR},
+      Url = {http://llc.oxfordjournals.org/content/26/4/463.abstract N2},
+      Volume = {26},
+      Year = {2011}}
+
+@article{Gabler_2011_ThoughtsOnScholarlyEditing,
+      Author = {Gabler, Hans Walter},
+      Date-Added = {2014-08-31 20:20:05 +0000},
+      Date-Modified = {2014-08-31 20:23:08 +0000},
+      Journal = {JLTonline},
+      Title = {Thoughts on Scholarly Editing. A Review Article occasioned by Paul Eggert, Securing the Past. Conservation in Art, Architecture and Literature.},
+      Url = {http://www.jltonline.de/index.php/reviews/article/viewFile/307/890},
+      Year = {2011}}            
+
+@proceedings{Banski_2010_WhyTEIStand-OffAnnotationDoesntQuiteWork,
+      Author = {Ba{\'n}ski, Piotr},
+      Date-Added = {2013-09-17 22:14:53 +0200},
+      Date-Modified = {2013-09-17 22:25:55 +0200},
+      Doi = {10.4242/BalisageVol5.Banski01.},
+      Journal = {Proceedings of Balisage: The Markup Conference 2010},
+      Number = {5},
+      Series = {Balisage Series on Markup Technologies},
+      Title = {Why TEI stand-off annotation doesn't quite work: and why you might want to use it nevertheless},
+      Year = {2010}}      
+
+@article{CaylessSoroka_2010_OnImplementingStringRangeForTEI,
+      Author = {Cayless, Hugh A. and Soroka, Adam},
+      Date-Added = {2014-10-07 06:37:02 +0000},
+      Date-Modified = {2014-10-07 08:42:50 +0200},
+      Doi = {10.4242/BalisageVol5.Cayless01.},
+      Journal = {Balisage: The Markup Conference 2010},
+      Title = {On Implementing string-range() for TEI},
+      Url = {http://www.balisage.net/Proceedings/vol5/html/Cayless01/BalisageVol5-Cayless01.html},
+      Year = {2010}}
+
+@article{Gabler_2010_TheorizingTheDigitalScholarlyEdition,
+      Author = {Gabler, Hans Walter},
+      Date-Added = {2014-08-31 12:50:45 +0200},
+      Date-Modified = {2014-08-31 18:55:31 +0000},
+      Journal = {Literature Compass},
+      Number = {2},
+      Pages = {43-56},
+      Doi = {10.1111/j.1741-4113.2009.00675.x},
+      Title = {Theorizing the Digital Scholarly Edition},
+      Volume = {7},
+      Year = {2010}}      
+
+@incollection{PierazzoStokes_PuttingTheTextBackIntoContext,
+      Address = {Norderstedt},
+      Author = {Pierazzo, Elena and Stokes, Peter A.},
+      Booktitle = {Codicology and Palaeography in the Digital Age 2},
+      Date-Added = {2013-06-18 11:50:54 +0200},
+      Date-Modified = {2013-06-18 11:53:09 +0200},
+      Editor = {Fischer, Franz and Fritze, Christiane and Vogeler, Georg},
+      Pages = {397-429},
+      Publisher = {Books on Demand},
+      Title = {Putting the Text back into Context: A Codicological Approach to Manuscript Transcription},
+      Year = {2010}}
+
+@article{Cummings_2009_SaintPaul,
+      Author = {Cummings, James},
+      Date-Added = {2013-09-17 17:17:50 +0200},
+      Date-Modified = {2013-09-17 17:18:01 +0200},
+      Doi = {10.1093/llc/fqp019},
+      Eprint = {http://llc.oxfordjournals.org/content/24/3/307.full.pdf+html},
+      Journal = {Literary and Linguistic Computing},
+      Number = {3},
+      Pages = {307-317},
+      Title = {Converting Saint Paul: A new TEI P5 edition of The Conversion of Saint Paul using stand-off methodology},
+      Url = {http://llc.oxfordjournals.org/content/24/3/307.abstract},
+      Volume = {24},
+      Year = {2009}}      
+
+@inbook{Cummings_2008_TheTextEncodingInitiativeAndTheStudyOfLiterature,
+      Author = {Cummings, James},
+      Chapter = {25},
+      Date-Added = {2013-09-17 17:18:29 +0200},
+      Date-Modified = {2013-09-17 17:21:33 +0200},
+      Editor = {Siemens, Ray and Schreibman, Susan},
+      Publisher = {Blackwell},
+      Title = {The Text Encoding Initiative and the Study of Literature},
+      Url = {http://nora.lis.uiuc.edu:3030/companion/view?docId=blackwell/9781405148641/9781405148641.xml&chunk.id=ss1-6-6},
+      Urldate = {2013-08-17},
+      Year = {2008}}
+
+@article{Gabler_2007_ThePrimacyOfTheDocumentinEditing,
+      Author = {Gabler, Hans Walter},
+      Date-Added = {2014-08-31 20:33:06 +0000},
+      Date-Modified = {2014-08-31 20:33:47 +0000},
+      Journal = {Ecdotica},
+      Title = {The Primacy of the Document in Editing},
+      Volume = {4},
+      Year = {2007}}      
+
+@article{Dahlstroem_DrowningByVersions,
+      Author = {Dahlstr{\"o}m, Mats},
+      Date-Added = {2016-09-24 16:52:52 +0000},
+      Date-Modified = {2016-09-24 16:53:58 +0000},
+      Journal = {Human IT},
+      Number = {4},
+      Title = {Drowning by Versions},
+      Year = {2000}}      
+
+@article{deBiasi_1996_WhatIsALiteraryDraft,
+      Author = {de Biasi, Pierre-Marc and Wassenaar, Ingrid},
+      Date-Added = {2015-03-09 15:11:47 +0000},
+      Date-Modified = {2015-03-09 15:13:21 +0000},
+      Journal = {Yale French Studies, Drafts},
+      Number = {89},
+      Pages = {26-58},
+      Title = {What is a Literary Draft? Toward a Functional Typology of Genetic Documentation},
+      Year = {1996}}      
+
+@book{McKenzie_BibliographyAndTheSociologyOfTexts,
+      Date-Added = {2014-08-31 12:43:38 +0200},
+      Date-Modified = {2014-08-31 12:44:15 +0200},
+      Title = {Bibliography and the Sociology of Texts}}
+
+    </textarea>
+
+    
+    <div class="bibtex_template">
+
+  <li>
+  <p>
+    <span class="if author">
+      <span class="author" style="font-weight: bold;"></span>
+    </span>
+    <span class="if year">
+      (<span class="year"></span>).&nbsp
+    </span>
+    <a class="url"><span class="title"></span></a>.
+    <span class="if journal">
+      In: <span class="journal" style="font-style: italic;"></span>.
+    </span>
+    <span class="if booktitle">
+      In: <span class="booktitle" style="font-style: italic;"></span>.
+    </span>
+    <span class="if mastersthesis">
+      <span class="mastersthesis" style="font-style: italic;"></span>, Masters thesis.
+    </span>
+    <span class="if school">
+      <i>Masters thesis,</i>&nbsp<span class="school"></span>.
+    </span>
+    <span class="if volume" style="font-style: italic;">
+      <span class="volume"></span>
+      <span class="if number" style="font-style: italic;">(<span class="number"></span>)</span>,&nbsp
+      <span class="if pages">
+        <span class="pages"></span>.&nbsp
+      </span>
+    </span>
+    <span class="if edition">
+      <span class="edition"></span> ed.,
+    </span>
+    <span class="if publisher">
+      <span class="publisher"></span>.
+    </span>
+
+      <br/>
+          <span class="if url" style="margin-left: 20px">
+            <a class="url" style="color:black; font-size:10px"><span class="url"></span></a>
+          </span>
+          <span class="if fulltexturl">
+              <br /><b>Volltext online: <a class="fulltexturl">PDF</a></b>
+          </span> <span class="if additionalinfo">
+              <br /><span class="additionalinfo"></span>
+          </span>
+          </p>
+      </li>
+    </div>
+
+    <!--bibtex-->
+    <!-- <script src="http://gnab.github.io/remark/downloads/remark-latest.min.js" type="text/javascript"></script> -->
+    <script src="remark/out/remark.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      var slideshow = remark.create();
+    </script>
+    <!--bibtex-->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <!-- <script type="text/javascript" src="http://bibtex-js.googlecode.com/svn/trunk/src/bibtex_js.js"></script> -->
+    <script type="text/javascript" src="bibtex_js.js"></script>
+    <!--bibtex-->
+
+  </body>
+</html>
