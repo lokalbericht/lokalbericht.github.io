@@ -1,0 +1,1506 @@
+<!--<!DOCTYPE html>-->
+<html>
+  <head>
+    <title>Hermann Burger (edieren) &mdash; Seminar Universität Basel, HS 2017</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+	<link rel="stylesheet" href="vendor/jQuery-Rebox-master/jquery-rebox.css">
+    <script type="text/javascript" src="vendor/jQuery-Rebox-master/lib/jquery.min.js"></script>
+    <!-- <script type="text/javascript" src="lib/zepto.min.js"></script> -->
+    <script type="text/javascript" src="vendor/jQuery-Rebox-master/lib/jquery-litelighter.js"></script>
+    <script type="text/javascript" src="vendor/jQuery-Rebox-master/jquery-rebox.js"></script>
+
+
+    <style type="text/css">
+      /*@import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+      @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+      @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+      @import url(https://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300,100);
+      @import url(https://fonts.googleapis.com/css?family=Josefin+Slab:400,700,400italic,700italic);
+      @import url(https://fonts.googleapis.com/css?family=Special+Elite);*/
+
+      @import url(offline-fonts/Yanone+Kaffeesatz.css);
+      @import url(offline-fonts/Droid+Serif-400,700,400italic.css);
+      @import url(offline-fonts/Ubuntu+Mono-400,700,400italic.css);
+      @import url(offline-fonts/Roboto+Slab-400,700,300,100.css);
+      @import url(offline-fonts/Josefin+Slab-400,700,400italic,700italic.css);
+      @import url(offline-fonts/Special+Elite.css);
+
+
+      body { font-family: 'Droid Serif'; }
+      h1, h2, h3, h4 {
+        font-family: 'Josefin Slab';
+        font-weight: normal;
+        background:rgba(255,255,255,.8);
+        padding: 15px 15px;
+      }
+      .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; 
+      font-size:13px;}
+      
+      a:link, a:visited {
+      color: black;
+      text-decoration: none;
+      }
+
+      .bibtex {
+      width: 750px;
+      height: 450px;
+      overflow: scroll;
+      font-size: 12px;
+      }
+        
+      .spaced {
+      line-height: 30px;
+      z-index: 10;}
+
+      .pad5 {
+        padding: 5px 5px;     
+      }
+
+      .ElementRight {
+      position: absolute;
+      bottom: 50px;
+      background:rgba(1,1,1,.5);      
+      padding: 15px 15px;
+      right: 0px;
+      color: white;
+      }
+      .horizontalElementCalascino-1a {
+      position: absolute;
+      top: 100px;
+      background: rgba(255, 255, 255, 0.8);
+      color: black;
+      padding: 5px 15px;
+      right: 80px;
+      width: 500px;
+      font-size: 36px;
+      line-height: 36px;
+      }
+      .horizontalElementCalascino-1b {
+      position: absolute;
+      top: 150px;
+      background: rgba(255, 255, 255, 0.8);
+      color: black;
+      padding: 5px 15px;
+      right: 80px;
+      width: 375px;
+      font-size: 36px;
+      line-height: 36px;
+      }
+      .horizontalElementCalascino-1c {
+      position: absolute;
+      bottom: 145px;
+      background: rgba(1, 1, 1, 0.8);
+      color: white;
+      padding: 5px 15px;
+      left: 0px;
+      width: 150px;
+      font-size: 18px;
+      line-height: 25px;
+      }
+      .horizontalElementCalascino-1d {
+      position: absolute;
+      bottom: 80px;
+      background: rgba(1, 1, 1, 0.8);
+      color: white;
+      padding: 5px 15px;
+      left: 50px;
+      width: 165px;
+      font-size: 18px;
+      line-height: 25px;
+      }
+      .horizontalElementCalascino-1e {
+      position: absolute;
+      bottom: 185px;
+      background: rgba(1, 1, 1, 0.8);
+      color: white;
+      padding: 5px 15px;
+      left: 0px;
+      width: 150px;
+      font-size: 18px;
+      line-height: 25px;
+      }
+      .jump:hover
+      {
+      z-index:100 !important;
+      }
+      .blechtrommel1a {
+      position: absolute;
+      left: 100px;
+      bottom: 0;
+      width: 70%;
+      height: 90%;
+      background-image: url(images/BlechtrommelFischer.jpg);
+      -webkit-transform: rotate(-15deg);
+      -moz-transform: rotate(-15deg);
+      -ms-transform: rotate(-15deg);
+      -o-transform: rotate(-15deg);
+      transform: rotate(-15deg);
+      background-size: contain;
+      background-repeat: no-repeat;
+      color: transparent;
+      }
+      .blechtrommel1a:hover
+      {
+      z-index:100 !important;
+      }
+      .blechtrommel2a {
+      position: absolute;
+      right: 50px;
+      bottom: 0;
+      width: 50%;
+      height: 90%;
+      background-image: url(images/PT.AT11071970.0360.png);
+      -webkit-transform: rotate(10deg);
+      -moz-transform: rotate(10deg);
+      -ms-transform: rotate(10deg);
+      -o-transform: rotate(10deg);
+      transform: rotate(10deg);
+      background-size: contain;
+      background-repeat: no-repeat;
+      color: transparent;
+      }
+      .blechtrommel2a:hover
+      {
+      z-index:100 !important;
+      }
+      .blechtrommel2 {
+      position: absolute;
+      right: 25px;
+      top: 20;
+      width: 50%;
+      height: 95%;
+      background-image: url(images/PT.AT11071970.0360.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      color: transparent;
+      }
+      .hermesquittung {
+      position: absolute;
+      right: 0px;
+      top: 0;
+      width: 36.3%;
+      height: 70%;
+      background-image: url(images/LD.HERMESQUITTUNG.png);
+      -webkit-transform: rotate(10deg);
+      -moz-transform: rotate(10deg);
+      -ms-transform: rotate(10deg);
+      -o-transform: rotate(10deg);
+      transform: rotate(10deg);
+      background-size: contain;
+      background-repeat: no-repeat;
+      color: transparent;
+      }
+      .horizontalElementRomanhandwerk {
+      position: absolute;
+      bottom: 116px;
+      background:rgba(1,1,1,.7);      
+      color: white;
+      padding: 5px 15px;
+      left: 68px;
+      width: 80%;
+      font-size: 22px;
+      line-height: 30px;
+      }
+      .horizontalElementLokalbericht {
+      position: absolute;
+      top: 130px;
+      background:rgba(1,1,1,.7);      
+      color: white;
+      padding: 5px 15px;
+      left: 68px;
+      width: 80%;
+      font-size: 22px;
+      line-height: 30px;
+      }
+      .horizontalElementBarzel {
+      position: absolute;
+      bottom: 135px;
+      background:rgba(1,1,1,.2);      
+      color: white;
+      padding: 15px 15px;
+      left: 162px;
+      width: 550px;
+      line-height: 45px;
+      }
+      .horizontalElementTeam {
+      position: absolute;
+      top: 200px;
+      background:rgba(1,1,1,.6);      
+      color: white;
+      padding: 15px 45px;
+      left: 0px;
+      width: 430px;
+      font-size: 14px;
+      line-height: 20px;
+      } 
+      .bottomElementLeft {
+      position: absolute;
+      bottom: 45px;
+      left: 46px;
+      font-size: 16px;
+      color: gray;
+      background:rgba(255,255,255,.9);
+      padding: 15px 15px;
+      }
+      .bottomElementRight {
+      position: absolute;
+      bottom: 45px;
+      background:rgba(255,255,255,.9);      
+      padding: 15px 15px;
+      right: 20px;
+      }
+      .footElement {
+      position: absolute;
+      bottom: 0px;
+      left: 46px;
+      background:rgba(255,255,255,.9);      
+      padding: 15px 15px;
+      }
+      .headElementLeft {
+      position: absolute;
+      top: 0px;
+      left: 46px;
+      width: 400px;
+      background:rgba(255,255,255,.9);      
+      padding: 15px 15px;
+      }
+      .footElementCenter {
+      position: absolute;
+      bottom: 0px;
+      left: 226px;
+      font-size: 10px;
+      color: gray;
+      padding: 15px 15px;
+      }
+      .footElementLeft {
+      position: absolute;
+      bottom: 0px;
+      left: 68px;
+      font-size: 16px;
+      color: gray;
+      background:rgba(255,255,255,.9);
+      padding: 15px 15px;
+      }
+      .footElementRight {
+      position: absolute;
+      bottom: 0px;
+      left: 505px;
+      width: 220px;
+      font-size: 16px;
+      color: gray;
+      background:rgba(255,255,255,.9);
+      padding: 10px 10px;
+      }
+      .blockquote {
+      padding-left: 30px;
+      padding-right: 30px;
+      margin: 20px;
+      margin-bottom: 10px;
+      text-indent: 10px;
+      }
+      .blockquote:after {
+      content: ' »';
+      font-size: 200%;
+      margin-right: 50px;
+      }
+      .blockquote:before {
+      content: '«';
+      display: block;
+      float: left;
+      margin-left: -50;
+      font-size: 200%;
+      }
+      .lokalbericht-ch-nav {
+      position: absolute;
+      top: 10px;
+      left: 220px;
+      width: 460px;
+      height: 110px;
+      }
+      .lokalbericht-ch-nav:hover {
+      background-color: rgba(51, 102, 153, 0.1);
+      }
+      .lokalbericht-ch-corenav {
+      position: absolute;
+      top: 120px;
+      left: 220px;
+      width: 335px;
+      height: 70px;
+      }
+      .lokalbericht-ch-corenav:hover {
+      background-color: rgba(51, 102, 153, 0.1);  
+      }
+      .lokalbericht-ch-corel {
+      position: absolute;
+      top: 190px;
+      left: 220px;
+      width: 175px;
+      height: 250px;
+      }
+      .lokalbericht-ch-corel:hover {
+      background-color: rgba(51, 102, 153, 0.1);  
+      }
+      .lokalbericht-ch-corer {
+      position: absolute;
+      top: 190px;
+      left: 400px;
+      width: 155px;
+      height: 250px;
+      }
+      .lokalbericht-ch-corer:hover {
+      background-color: rgba(51, 102, 153, 0.1);  
+      }
+      .lokalbericht-ch-navr {
+      position: absolute;
+      top: 120px;
+      left: 555px;
+      width: 125px;
+      height: 320px;
+      }
+      .lokalbericht-ch-navr:hover {
+      background-color: rgba(51, 102, 153, 0.1);  
+      }
+      .lokalbericht-ch-quot {
+      position: absolute;
+      top: 440px;
+      left: 220px;
+      width: 460px;
+      height: 25px;
+      }
+      .lokalbericht-ch-quot:hover {
+      background-color: rgba(51, 102, 153, 0.1);  
+      }
+      a.lokalbericht-ch-visnav {
+      display: block;
+      position: absolute;
+      top: 465px;
+      left: 220px;
+      width: 460px;
+      height: 200px;
+      }
+      .lokalbericht-ch-visnav:hover {
+      background-color: rgba(51, 102, 153, 0.1);  
+      }
+      .rebox {
+        /*background-color: black; */
+        padding: 5px;
+        color: white;
+      }
+
+      .rebox-caption p {
+        font-size: 20px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <textarea id="source">
+
+name: Titelseite
+class: center, center
+
+      <br/>
+      <br/>
+      
+## Hermann Burger. Lokalbericht – Archiv und (digitale) Edition
+
+Peter Dängeli, Cologne Center for eHumanities<br/><br/>
+
+<span style="opacity: 0.7;">Basel, 18. Dezember 2018</span><br/><br/>
+
+
+http://www.lokalbericht.ch | http://purl.org/lokalbericht
+        
+.bottomElementLeft[<img style="max-height: 85px;" src="images/NB_SLA.png" alt="Logo SLA">]
+.bottomElementRight[![Logo CCeH](images/CCeH.png)]
+.footElement[.left[<img style="max-height: 25px;" src="images/SNF.png" alt="Logo SNF">]]
+
+<!-- background-image: 
+url(images/ErSchreibt.jpg) -->
+
+???
+
+* Editionsprojekt, Hybridedition (Druck und Digitale Edition)
+
+
+---
+
+
+name: Ueberblick        
+        
+# Überblick
+
+.spaced[
+1. [Hermann Burger](#Burger) und sein [Nachlass](#Nachlass)
+1. [Das Editionsprojekt](#Editionsprojekt)
+1. [Das Cologne Center for eHumanities und sein Kontext](#CCeH)
+1. Der Roman: [Entstehungskontext](#Calascino1), [Materialität](#Maschinenwechsel), [Poetik](#Romanhandwerk)
+1. [Digitales Edieren, ausgewählte Probleme](#lokalbericht.ch)
+  * [Datenstruktur (TEI)](#TEI)
+  * [Textgenetik: Mikroebene](#Mikrogenetisch1)
+  * [Textgenetik: Makroebene](#Makrogenetisch)
+1. [Die digitale Edtition](#DigitaleEdition)  
+1. [Diskussion](#Diskussion)
+]
+<!-- 1. [Hermann Burger](#Autor) und seine [Poetologie](#Romanhandwerk) -->
+<!-- 1. [Dossier génétique](#StemmatischerUeberblick) -->
+
+  <!-- 1. [Ausgewählte Probleme](#Stolpersteine) -->
+  <!-- 1. Hinter der Kulisse
+  * [Werkzeugauswahl: bestimmende Faktoren](#Werkzeugauswahl)
+  * [Eingesetzte Werkzeuge](#Technologie) -->
+  <!-- * Kiln -->
+  <!-- * [Nachhaltigkeitsaspekte](#Nachhaltigkeit) -->
+
+<!--<a href="http://uni-koeln.de/~pdaengel/lokalbericht-pr/annex/annex.html#1" style="font-size: small;" target="_blank">Annex</a>-->
+
+<!-- 1. [Der Autor](#Burger), das [Material](#Inhaltsübersicht) und das [Editionsprojekt](#Editionsprojekt)
+1. [Digitales Edieren, ausgewählte Probleme](#lokalbericht.ch)
+  * [Datenstruktur (TEI)](#TEI)
+  * [Textgenetik: Mikroebene](#Mikrogenetisch1)
+  * [Textgenetik: Makroebene](#Makrogenetisch)
+1. [Die digitale Edtition](#DigitaleEdition)  
+1. Ein zweites Beispiel: [*Edição Digital de Fernando Pessoa. Projetos e Publicações*](#Pessoa)
+1. [Diskussion](#Diskussion)
+1. [Literatur](#Literatur) -->
+
+???
+
+Überblick
+* Autor
+* Dokumente
+* Digitale Edition aus Nutzerperspektive
+* Digitale Edition aus Entwicklerperspektive
+
+
+
+---
+name: Burger
+background-image: url(images/Burger1.jpg)
+class: bottom, center
+
+### [Hermann Burger 1942 – 1989](#Ueberblick)
+
+<!-- # [Der Schriftsteller](#Ueberblick) -->
+.footElementCenter[© Hermann und Matthias Burger]
+
+???
+
+Hier im Anzug mit Krawatte an seiner Schreibmaschine (Bild aus dem Entstehungszeitraum des *Lokalbericht*)
+
+Frau Kolp hat den Nachlass von Hermann Burger in einer früheren Sitzung vorgestellt. Inwiefern dabei der Lokalbericht zu Sprache kam, weiß ich nicht. Es ist aber auf jeden Fall so, dass diesem Romantyposkript – auch wenn es im Nachlassinventar seit je verzeichnet war – erst in jüngerer Zeit überhaupt eine gewisse Beachtung zuteil wurde.
+
+Magnus Wieland, Kollege von Frau Kolp und Frau Jäger am SLA, hat sich den Text dann vor knapp zehn Jahren etwas genauer angeschaut und seine Originalität schnell erkannt.
+
+Und damit sind wir auch schon mittendrin in der Projektgeschichte.
+
+---
+name: Nachlass
+
+
+# [Hermann Burgers Nachlass](#Ueberblick)
+
+<div id="lb1" class="gallery" style="position: absolute; left:-20px; top: 160px; background-color: black; padding: 5px; overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;">
+  <a href="http://www.lokalbericht.ch/fcgi-bin/iipsrv.fcgi?IIIF=/var/local/images-lokalbericht/tif/LB.TEIL1.0010-vips256.tif/full/pct:20/0/default.jpg" title="Typoskript Lokalbericht, erste Seite recto">
+    <img src="http://www.lokalbericht.ch/fcgi-bin/iipsrv.fcgi?IIIF=/var/local/images-lokalbericht/tif/LB.TEIL1.0010-vips256.tif/full/pct:2/0/default.jpg" />
+  </a>
+  <a href="http://www.lokalbericht.ch/fcgi-bin/iipsrv.fcgi?IIIF=/var/local/images-lokalbericht/tif/LB.TEIL3.2040-vips256.tif/full/pct:20/0/default.jpg" title="Typoskript Lokalbericht, III. Teil, S. 204 recto">
+    <img src="http://www.lokalbericht.ch/fcgi-bin/iipsrv.fcgi?IIIF=/var/local/images-lokalbericht/tif/LB.TEIL3.2040-vips256.tif/full/pct:2/0/default.jpg" />
+  </a>
+  <a href="http://www.lokalbericht.ch/fcgi-bin/iipsrv.fcgi?IIIF=/var/local/images-lokalbericht/tif/PE.SCHAUBUDE0.0010-vips256.tif/full/pct:20/0/default.jpg" title="Aufbewahrungsmappe „Eine Illusion“ (1963)">
+    <img src="http://www.lokalbericht.ch/fcgi-bin/iipsrv.fcgi?IIIF=/var/local/images-lokalbericht/tif/PE.SCHAUBUDE0.0010-vips256.tif/full/pct:2/0/default.jpg" />
+  </a>
+  <a href="http://www.lokalbericht.ch/fcgi-bin/iipsrv.fcgi?IIIF=/var/local/images-lokalbericht/tif/PE.ISASTRUKT0.0010-vips256.tif/full/pct:20/0/default.jpg" title="„Strukturschema“ zu „Isabelle oder der erste Schnee“ (1968)">
+    <img src="http://www.lokalbericht.ch/fcgi-bin/iipsrv.fcgi?IIIF=/var/local/images-lokalbericht/tif/PE.ISASTRUKT0.0010-vips256.tif/full/pct:2/0/default.jpg" />
+  </a>
+  <a href="http://www.lokalbericht.ch/fcgi-bin/iipsrv.fcgi?IIIF=/var/local/images-lokalbericht/tif/AT.EILLUSION1.0040-vips256.tif/full/pct:20/0/default.jpg" title="„Eine Illusion“ I (1963), S. 4">
+    <img src="http://www.lokalbericht.ch/fcgi-bin/iipsrv.fcgi?IIIF=/var/local/images-lokalbericht/tif/AT.EILLUSION1.0040-vips256.tif/full/pct:2/0/default.jpg" />
+  </a>
+  <a href="http://www.lokalbericht.ch/fcgi-bin/iipsrv.fcgi?IIIF=/var/local/images-lokalbericht/tif/LD.FOTOCAL1.0010-vips256.tif/full/pct:20/0/default.jpg" title="Foto: Album Calascino sopra Gadero (Juli 1970), S. 1">
+    <img src="http://www.lokalbericht.ch/fcgi-bin/iipsrv.fcgi?IIIF=/var/local/images-lokalbericht/tif/LD.FOTOCAL1.0010-vips256.tif/full/pct:2/0/default.jpg" />
+  </a>
+  <a href="http://www.lokalbericht.ch/fcgi-bin/iipsrv.fcgi?IIIF=/var/local/images-lokalbericht/tif/LD.BLEISTIFTZEICHK1.0010-vips256.tif/full/pct:20/0/default.jpg" title="[Isabelle] (1961), Bleistift (Kopie 1)">
+    <img src="http://www.lokalbericht.ch/fcgi-bin/iipsrv.fcgi?IIIF=/var/local/images-lokalbericht/tif/LD.BLEISTIFTZEICHK1.0010-vips256.tif/full/pct:2/0/default.jpg" />
+  </a>
+  <a href="http://www.lokalbericht.ch/fcgi-bin/iipsrv.fcgi?IIIF=/var/local/images-lokalbericht/tif/BR.KURATORIUMAG1.0010-vips256.tif/full/pct:20/0/default.jpg" title="Brief an das Aargauer Kuratorium, 4.10.1970 (nicht abgeschickt), S. 1">
+    <img src="http://www.lokalbericht.ch/fcgi-bin/iipsrv.fcgi?IIIF=/var/local/images-lokalbericht/tif/BR.KURATORIUMAG1.0010-vips256.tif/full/pct:2/0/default.jpg" />
+  </a>
+  <a href="images/PT.AT09091969SB.0090.png" title="Sonderbeilage „Aargauer Tagblatt“ vom 9.9.1969, S. [9]">
+    <img src="images/PT.AT09091969SB.0090t.png" />
+  </a>
+</div>
+
+<h2 style="position: absolute; top: 360px; right: 0px;">Ein unveröffentlichter Roman und viele mit diesem zusammenhängende Dokumente aus dem Nachlass</h2>
+
+          
+        
+
+
+???
+
+* 178 Typoskriptseiten, 
+* hand- und vor allem maschinenschriftliche Fassungen und Vorstufen inkl. Durchschläge und Kopien (Avant-textes)
+* aus Briefen, Lebensdokumenten, Prätexten und Teilabdrucken (Epitexte)
+* graphische Skizzen und Aufbewahrungsmäppchen (Peritexte)
+
+---
+name: Editionsprojekt
+
+# [Das Editionsprojekt](#Ueberblick)
+
+- 178 Romantyposkriptseiten
+
+- hauptsächlich einseitig beschrieben
+
+- wenig hand- und maschinenschriftliche Korrekturen
+
+- *Avant textes*: viele Vorstufen der 'Mosaiksteine'
+        
+- insgesamt rund 900 Dokumente
+
+- umfangreiche Kontextmaterialien (Zeitungsseiten, Briefe, Schemata u. m.)
+
+???
+
+**Eckdaten zum Editionsprojekt**
+
+* Ausgangslage
+
+ - **178 Romantyposkriptseiten**
+ - hauptsächlich **einseitig beschrieben**
+ - **wenig hand- und maschinenschriftliche Korrekturen**
+ - *Avant textes*: **viele Vorstufen** der 'Mosaiksteine'
+ - insgesamt rund **900 Dokumente**
+ - umfangreiche **Kontextmaterialien** (Zeitungsseiten, Briefe, Schemata u. m.)
+
+--
+---   
+
+- Hybrid-Edition mit digitalem Schwerpunkt
+
+ - Faksimile
+ - diplomatisch<!-- -topographisch -->e Transkriptionen
+ - Lesefassung
+ - Kommentar
+
+- Druckausgabe (illustrierte Lesefassung mit ausführlichem Überblickskommentar)
+
+???
+
+* Hybride Edition mit digitalem Schwerpunkt
+ - Faksimile
+ - diplomatisch<!-- -topographisch -->e Transkriptionen
+ - Lesefassung
+ - Kommentar
+
+---
+name: Editionsprojekt2
+background-image: url(images/LB_Print.png)
+class: top
+
+# [Das Editionsprojekt](#Ueberblick)
+
+.horizontalElementTeam[        
+**Projektleitung**: 
+
+PD Dr. Irmgard Wirtz, Leiterin SLA 
+
+**Philologie**: 
+
+Dr. Simon Zumsteg und Dr. Magnus Wieland (SLA)
+
+**Beratung**: 
+
+Dr. Patrick Sahle, Dr. Franz Fischer, Peter Dängeli (CCeH)
+
+**Technische Realisierung**: 
+
+Peter Dängeli, Christian Theisen, Bernhard Strecker (CCeH)
+
+**Projektdauer**: 
+
+2013 &ndash; 2016
+]
+
+???
+
+**Eckdaten (personell/institutionell)**
+
+* 120 Stellenprozente
+* 36 Monate
+
+
+## Warum CCeH?
+
+Heute: NIE INE (den Studierenden bekanntes Teilprojekt: Kuno Raeber), Humboldt, Gotthelf, Lavater, Haller, usw.
+
+Aber: Köln ist auch heute noch eine gute Adresse
+
+---
+name: CCeH
+class: bottom, center
+background-image: url(images/CCeH-2018.jpg)
+background-size: contain
+
+<div style="background-color: rgba(51, 185, 229,.9); position: relative;">
+<h1 style="background: none;"><a href="#Ueberblick" style="color: white;">Das Cologne Center for eHumanities</a></h1>
+<div class="pad5" style="position: absolute; bottom: 0px; right: 0px; font-size: small;"><a style="color: white;" href ="http://cceh.uni-koeln.de" target="_blank" title="Cologne Center for eHumanities"><em>http://cceh.uni-koeln.de</em></a></div>
+</div>
+
+---
+name: Dixit
+background-image: url(images/Dixit.png)
+background-size: contain
+
+
+<div style="background-color: #8a2561; opacity: 0.9; width: 300px; position: relative; left: 528px; top: 311px;">
+<h1 style="background: none;"><a href="#Ueberblick" style="color: white;">DiXiT</a></h1>
+<div class="pad5" style="position: absolute; bottom: 0px; right: 0px; font-size: small;"><a style="color: white;" href ="http://dixit.uni-koeln.de" target="_blank" title="DSE Initial Training Network – DiXiT"><em>http://dixit.uni-koeln.de</em></a></div>
+</div>
+
+---
+name: RIDE
+<!-- background-image: url(images/IDE.png)
+background-size: contain
+ -->
+
+<div style="background-color: rgba(108, 119, 19, .9); position: relative;">
+<h1 style="background: none;"><a href="#Ueberblick" style="color: white;">IDE & RIDE</a></h1>
+<div class="pad5" style="position: absolute; top: 0px; right: 0px; font-size: small; text-align: right;">
+      <p><a style="color: white;" href ="https://www.i-d-e.de/publikationen/weitereschriften/criteria-version-1-1" target="_blank" title="Criteria for Reviewing Scholarly Editions"><em>https://www.i-d-e.de/publikationen/weitereschriften/criteria-version-1-1</em></a>
+      </p>
+      <p><a style="color: white;" href ="http://ride.i-d-e.de" target="_blank" title="Review Journal for Digital Editions and Resources"><em>http://ride.i-d-e.de</em></a></p>
+</div>
+</div>
+
+<img src="images/IDE.png"
+      class="jump" 
+      style="position: absolute;
+      top: 148px;
+      color: white;
+      left: 268px;
+      width: 800px;
+      box-shadow: 1px 1px 5px #888888;
+      -webkit-transform: rotate(10deg);
+      -moz-transform: rotate(10deg);
+      -ms-transform: rotate(10deg);
+      -o-transform: rotate(10deg);
+      transform: rotate(10deg);"
+      title="Criteria for Reviewing Scholarly Editions"/>
+
+<img src="images/RIDE-2018.png"
+      class="jump" 
+      style="position: absolute;
+      top: 345px;
+      color: white;
+      left: 70px;
+      width: 800px;
+      box-shadow: 1px 1px 5px #888888;
+      -webkit-transform: rotate(-5deg);
+      -moz-transform: rotate(-5deg);
+      -ms-transform: rotate(-5deg);
+      -o-transform: rotate(-5deg);
+      transform: rotate(-5deg);"
+      title="Review Journal for Digital Editions and Resources"/> 
+
+---
+name: LiterarySDEs
+
+<div style="background-color: gray; position: relative;">
+<h1><a href="#Ueberblick">Literarische digitale Editionen am CCeH</a></h1>
+</div>
+
+.spaced[
+* [<span style="color: black;">Hermann Burgers *Lokalbericht*</span>](#Burger)
+* [<span style="color: black;">*Edição Digital de Fernando Pessoa. Projetos e Publicações*</span>](#Pessoa)
+* Mongolian Oral Literature
+* DSB / Disticha Catonis (Spätantike)
+* Kleine und fragmentarische Historiker der Spätantike (historiograph. Schwerpunkt)
+* *Soledades* de Luis de Góngora (17. Jh.)
+<!-- * *iNovel* platform (visiting researcher, project development stage) -->
+* *Syiabend und Xece*, Kurdische Epen und Hymnen (Projektentwicklung)
+* Arthur Schnitzler (Akademiekooperation, gelegentliche Beratung)
+]
+
+???
+
+Es wird natürlich nicht nur theoretisiert...
+
+(Daneben: historische, altertumswissenschaftliche/papyrologische, soziologische Projekte; eigenes Center für linguistische Forschung und Lehrer)
+
+<!-- ---
+name: LiterarySDEs2
+
+<div style="background-color: gray; position: relative;">
+<h1><a href="#Ueberblick">Literarische digitale Editionen am CCeH</a></h1>
+</div>
+
+.spaced[
+* [<span style="color: black;">Hermann Burgers *Lokalbericht*</span>](#Burger)
+* [<span style="color: black;">*Edição Digital de Fernando Pessoa. Projetos e Publicações*</span>](#Pessoa)
+]
+
+<hr/>
+
+.spaced[
+* Einen **Roman** edieren vs. die **Konzeption von Werken** eines Autors edieren
+
+* Eine Gemeinsamkeit: 
+
+ * Verwendung von Datenvisualisierungen: Exploration, Analyse, Orientierung, Navigation
+]
+-->
+
+
+---
+name: Calascino1
+background-image: url(images/LD.FOTOCAL0.0010.png)
+background-size: contain
+
+
+.horizontalElementCalascino-1a[<a href="http://www.lokalbericht.ch/orte/LB.OFACT.CALASCINO#LB.OFACT.CALASCINO" target="_blank"/>Calascino sopra Gadero</a>]
+
+.horizontalElementCalascino-1b[Juli/August 1970]
+
+.horizontalElementCalascino-1c[Günter Grass: 
+
+*Die Blechtrommel*]
+
+.horizontalElementCalascino-1d[*Aargauer Tagblatt*]   
+
+???
+
+**Schreibszene**
+
+Wir haben es mit einem Autor zu tun, der selbst im heißen Tessiner Sommer im Langarmhemd an der Sonne sitzt, das Haupt mit einem Strohhut (Freiämter, Trilby?) bedeckt.
+
+Das Polaroidfoto zeigt den Autor an der Arbeit auf der besonnten Terrasse des Ferienhauses (das Bekannten von Burgers Mutter gehört) im Sommer 1970. 
+
+Seinen Eltern schreibt er in einem [Brief (26.7.1968)](http://www.lokalbericht.ch/BR.BURGERELTERN1.0010-d), es sei für ihn "das günstigste Schreibklima", denn es bietet ihm "jene Polarität von Mondänität und Abgeschiedenheit, die zur Erholung als auch zum Arbeiten fruchtbar wirkt".
+
+Auf der Folie sind zwei Dinge hervorgehoben, Grass' *Blechtrommel* und das *Aargauer Tagblatt*.  
+
+---
+name: Blechtrommel
+
+<div class="blechtrommel2a">.</div>
+<div class="blechtrommel1a">.</div>
+
+
+???
+
+**Die Blechtrommel**
+
+Grass' Erstlingsroman (1959) übte einen großen Einfluss auf Burger aus (eigene Schreibversuche ab Mitte 1963, Abbruch des Architekturstudiums im Frühling 1965, ausgedehnte Reise auf den Spuren der *Blechtrommel* durch Polen und die DDR 1969). Verschiedene Motive des *Lokalberichts* verweisen auf die *Blechtrommel*.
+
+**Aargauer Tagblatt**
+Nach der *Blechtrommel*-Reise im Sommer 1969 beginnt Burger mit einer Sammelaktion, die er nahezu ein Jahr lang ziemlich systematisch fortsetzt. Er reißt die Lokalseiten zu Aarau aus dem *Aargauer Tagblatt* heraus und bewahrt sie auf.
+
+Als das Ehepaar Mitte Juli 1970 in Urlaub nach Calascino fährt, haben sie eine kleine Schriftstellerwerkstatt im Kofferraum: die Hermes Media 3, die Sammlung der *Tagblatt*-Lokalseiten und (vermutlich) dessen aktuellste Wochenendausgabe, verschiedene Bücher, darunter die *Blechtrommel* und schließlich das Typoskript einer Novelle und die ersten Seiten des unlängst begonnenen *Lokalberichts*.
+
+Auf der Rückreise werden es das weitgehend vollständige Romantyposkript sein, nach Burgers Einschätzung ist es aber noch keineswegs ein fertiger Roman. 
+
+---
+name: Calascino2
+background-image: url(images/LD.FOTOCAL0.0010.png)
+background-size: contain
+
+
+.horizontalElementCalascino-1a[<a href="http://www.lokalbericht.ch/orte/LB.OFACT.CALASCINO#LB.OFACT.CALASCINO" target="_blank"/>Calascino sopra Gadero</a>]
+
+.horizontalElementCalascino-1b[Juli/August 1970]
+
+.horizontalElementCalascino-1e[Hermes Media 3]
+
+???
+
+**Hermes Media 3**
+
+Zwei Tage vor der Fahrt nach Calascino im Sommer 1970 kauft sich Hermann Burger eine neue Schreibmaschine. 
+
+---
+name: Maschinenwechsel
+background-image: url(images/LB.TEIL1.0100.png)
+
+.headElementLeft[Typoskript *Lokalbericht*, S. 10 
+
+(o.D., SLA, Nachlass Hermann Burger, Schachtel 05, Sig. A-01-b)]
+
+<div class="hermesquittung">.</div>
+
+???
+
+Dieses reale Ereignis baut er – was für den gesamten Text charakteristisch ist – gleichsam in Echtzeit in die Fiktion ein, indem er die Anschaffung der Hermes Media 3 und der Olivetti Valentine thematisiert.
+
+Wie das Typoskript zeigt, korrespondiert mit der geschilderten Schreib-Szene in der Tat ein Wechsel von der remponierten älteren Olivetti auf die neue Hermes Media 3.
+
+Dabei greift Burger mit der akribischen Beschreibung der Maschinen auf eine bereits zwei Jahre zuvor im Typoskript ["Schreibmaschine"](http://www.lokalbericht.ch/AT.SCHREIBMASCH0.0010-d) entwickelte Idee zurück. 
+
+---
+name: Romanhandwerk
+background-image: url(images/AT.ROMANHAND0.0010.png)
+background-size: contain
+
+.horizontalElementRomanhandwerk[.blockquote[
+Das Romanhandwerk ist ein Puzzle-Spiel, man beginnt mit dem Anfertigen kleiner Einzelteile, malt ein paar gelungene Details, ohne auch nur eine Ahnung vom Ganzen zu haben. Mit der Zeit ergibt sich das grosse Bild, und dann geht man auf die Suche nach den fehlenden Teilen.]]
+
+        
+.footElementLeft[Typoskript *Romanhandwerk* 
+
+(o.D., SLA, Nachlass Hermann Burger, Schachtel 03, Sig. A-01-a)]
+
+???
+
+**Der poetologische Kern des Romans**
+
+So wie Burger das Romanhandwerk hier um 1968 beschreibt, agiert er auch in seiner Schreibwut im Sommer 1970. Nach Jahren der (z.T. wohl unbewussten) Vorbereitung fallen auf einmal viele Stränge zusammen. 
+
+Burger bedient sich des gesammelten Materials und fügt den entstehenden Text im Eiltempo als eine Art Mosaik aus älteren Bausteinchen zusammen. 
+
+
+---
+name: Lokalbericht
+background-image: url(images/LB.TEIL1.0760.png)
+background-size: contain
+
+.horizontalElementLokalbericht[.blockquote[
+        Der Lokalredaktor Barzel ist in meinen Augen der glücklichste, weil unbewussteste Schriftsteller der Welt. Er trägt ein riesiges Mosaik aus kleinsten, buntesten Steinchen zusammen[,] ohne an die Illusion eines Gesamtplanes zu glauben.]]
+
+.footElementLeft[Typoskript *Lokalbericht* 
+
+(o.D., SLA, Nachlass Hermann Burger, Schachtel 05, Sig. A-01-b)] 
+
+???
+
+Auch ins Romantyposkript fließt dieses hervorragende poetologische Motiv ein, beispielhaft in der Person des Lokalredaktors Barzel und dessen Redaktionsarbeit.
+
+Dieses Verfahren, Texte als kunterbuntes Mosaik aus fremden Textbausteinchen zu konzipieren, kommt im *Lokalbericht* erstmals und noch verhältnismäßig ungehobelt zu Tragen.
+
+Nach 1970 wird er sich mit diesem Verfahren – im Verbund mit der „Verfremdung zur Kenntlichkeit“ – auf originelle Weise in der deutsch(schweizerisch)en Literaturszene in Stellung bringen.
+
+
+---
+name: Inhaltsübersicht
+background-image: url(images/LB.INHALTUETS1.0010.png)
+background-size: contain
+
+.horizontalElementBarzel[ ]
+
+.footElementRight[Typoskript *Inhaltsübersicht*
+
+(o.D., in: SLA, Nachlass Hermann Burger)]
+
+
+<!-- ???
+
+Hermann Burger
+
+Hier im Anzug mit Krawatte an seiner Schreibmaschine (Bild aus dem Entstehungszeitraum des *Lokalbericht*)
+
+Den Roman *Lokalbericht* verfasst er zur Hauptsache um 1970 (mit 28 Jahren), er wird ihn aber selber Zeit seines Lebens nicht veröffentlichen.
+
+Im Romantyposkript verarbeitet er Versatzstücke eigener Texte, die er zum Teil zehn Jahre zuvor erstmals niederschrieb und in der Zwischenzeit mehrfach überarbeitete. 
+
+Hermann Burgers Nachlass lagert heute im Schweizerischen Literaturarchiv in Bern. Er wurde dem SLA nach Burgers in gewisser Weise konsequenten Suizid – Burger, der unter einer schweren manisch-depressiven Erkrankung litt, hatte in seinem Selbstmord-Thesen-Büchlein "Tractatus logico-suicidalis" den Selbstmord zum Kunstwerk, zum würdigen Abschluss einer Krankheitskarriere, zum *opus magnum* stilisiert – übergeben. -->
+
+---
+name: StemmatischerUeberblick
+background-image: url(images/LB_Stemma_20160830.png)
+background-size: contain
+
+# [*Dossier génétique*](#Ueberblick)
+
+.footElementRight[http://purl.org/lokalbericht/dossier]
+
+???
+
+Diese schematische Darstellung führt alle literarischen Texte aus Burgers Nachlass auf, die mit dem Lokalbericht in engem Zusammenhang stehen. 
+
+Es wurde hauptsächlich zur Darstellung der genetischen Situation in der Druckausgabe konzipiert, ist aber auch Bestandteil der digitalen Edition. Letztere geht aber durch die Darstellung von Bezügen auf Blattebene weiter und bietet einen höheren Informationsgehalt.
+
+--
+
+name: Editionsprojekt2
+background-image: url(images/LB_Stemma_Illusion_20160830.png)
+
+
+---
+name: lokalbericht.ch
+background-image: url(images/LB_Lokalbericht.png)
+background-size: contain
+
+# [Digitale Edition](#Ueberblick)
+
+
+???
+
+**Kurze Rekapitulation**
+
+* **Mosaik aus Textbausteinen**, die über zehn Jahre verfasst wurden und systematisch gesammelt wurden
+* **Schreibmarathon** im Sommer 1970
+* sehr **dichtes Netzwerk** von fiktiven und realen Personen, Orten und Werken im Romantext
+* vielfältige **Zusatzmaterialien** dank Burgers Sammelleidenschaft und Simon Zumstegs akribischer Forschungsarbeit
+
+**Wie lässt sich dies digital lesbar, zugänglich und verständlich machen?**
+
+s
+
+---
+name: Stolpersteine
+layout: false
+
+# [Ausgewählte Probleme](#Ueberblick)
+
+1. ## [Datenstruktur (TEI)](#DokumentTextzentrierung)
+1. ## [Textgenetik: Mikroebene](#Mikrogenetisch1)
+1. ## [Textgenetik: Makroebene](#Makrogenetisch)
+
+<!--
+
+layout: false
+name: DokumentTextzentrierung
+            
+# [#1](#Ueberblick): Datenstruktur
+
+<table>
+  <tr>
+      <td>editions</td>
+      <td></td>
+      <td><a href="http://4.bp.blogspot.com/-6F3f_DSibac/UfponoZrKWI/AAAAAAAAC0g/hFy2W6G3nPk/s1600/docs-theories.tiff"><img src="images/Pierazzo_DSEstrataE.jpg" alt="Editions" width="660"/></a></td>
+  </tr>
+  <tr>
+      <td>theories</td>
+      <td/>
+      <td><a href="http://2.bp.blogspot.com/-3Oh14ZQ-spA/UfpotiLmOpI/AAAAAAAAC0o/lSQiGB6H5Gg/s1600/docs-editions.tiff"><img src="images/Pierazzo_DSEstrataT.jpg" alt="Theories" width="660"/></a></td>
+    </tr>
+</table>
+
+.footElementLeft[Elena Pierazzo, *Digital Scholarly Editing: Theories, Models and Methods*, 2014, S. 60 (http://hal.univ-grenoble-alpes.fr/hal-01182162).]
+
+.bottomElementRight[[>](#Mikrogenetisch1)]
+
+-->            
+???
+
+Drei wesentliche Aspekte (TEI, Mikrogenese, Makrogenese)
+
+---
+
+name: TEI
+
+# [Text Encoding Initiative](#Ueberblick)
+
+<img src="images/TEI.png" style="position: absolute; top: -15px; right: -10px; opacity: .75;" width="35%" />
+
+<br/>
+.spaced[
+* http://www.tei-c.org/
+
+* gegründet 1987
+
+* zunächst **SGML** (*Standard Generalized Markup Language*), dann **XML** (*Extensible Markup Language*; ein SGML-Profil bzw. -Derivat)
+
+* TEI P1 – Juni 1990
+
+* TEI P5 – November 2007
+
+* ***Guidelines***, kein harter Standard
+
+* Grundprinzip: **Semantik** (und nicht Präsentation wie z.B. HTML, ODF)
+
+* Aber: 2011 TEI P5 v2.0.1 mit Unterstützung für **genetisches Edieren**
+
+* **Unicode** basiert, aber auch andere Zeichen können verwendet werden
+]
+
+
+---
+
+name: TEI-Struktur
+background-image: url(images/BohnenkampBrueningEtAl.png)
+
+# [#1](#Ueberblick): Datenstruktur, Hierarchien
+
+.footElementLeft[Bohnenkamp, Brüning et al., Perspektiven auf Goethes ›Faust‹. Werkstattbericht der historisch-kritischen Hybridedition, *Jahrbuch des Freien Deutschen Hochstifts*, 2011, S. 48.]
+
+???
+
+**Text vs. Dokument**
+
+Text- und Dokumentstruktur sind nicht das gleiche. Beim Beschreiben eines Texts wollen wir z.B. wissen, was ein Kapitel oder ein Absatz ist. Aus Dokumentperspektive interessieren dagegen etwa die einzelnen Zeilenumbrüche.
+
+Ein Beispiel aus einem anderen Projekt zur Veranschaulichung.
+
+Dargestellt sind zwei Perspektiven auf drei Verse, die in einer bestimmten Reihenfolge und an bestimmten Stellen auf dem Textträger niedergeschrieben wurden, und eine dritte Perspektive, die auf die zeitliche Abfolge blickt.
+
+---
+name: TEI-Struktur
+# [#1](#Ueberblick): Datenstruktur, Ansätze
+
+<table>
+    <tr>
+        <td>Eingebettetes Encoding</td>
+        <td width="30"></td>
+        <td align="right">Parallel-Encoding</td>
+    </tr>
+    <tr>
+        <td><img src="images/LB_EmbeddedEncoding.png" alt="Embedded encoding" title="Embedded encoding" width="350"></img></td>
+        <td/>
+        <td><img src="images/LB_ParallelEncoding.png" alt="Parallel encoding" title="Parallel encoding" width="350"></img></td>
+    </tr>
+    <tr>
+      <td>cf. <a href="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/PH.html#PHZLAB" target="_blank">TEI P5, 11.2.2</td>
+      <td></td>
+      <td align="right">cf. <a href="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/PH.html#PH-bov" target="_blank">TEI P5, 11.2.1</td>
+    </tr>
+</table>
+
+???
+
+* TEI P5, Kapitel 11, *Representation of Primary Sources*
+
+    * 11.2 *Combining Transcription with Facsimile*
+
+        * 11.2.1 *Parallel Transcription*
+        * 11.2.2 *Embedded Transcription*
+
+Im Lokalbericht-Projekt haben wir uns für ein eingebettetes Encoding entschieden. Wir folgten der Prämisse, das Dokument möglichst präzise zu beschreiben und – ausgehend von dieser Beschreibung – durch eingestreute Signale (TEI-Milestones) das Textencoding automatisiert zu generieren.
+
+Dieser Ansatz funktionierte gut, da die vorliegenden Typoskriptseiten (und Briefe) sehr regelmäßig strukturiert sind und in aller Regel den Textfluss abbilden. 
+
+Bei hand- oder maschinenschriftliche Entwürfe mit vielen Marginalien und nachträglichen Umstellungen (*transpositions*) käme das gewählte System jedoch an die Grenzen.
+
+---
+
+name: Datenstruktur
+# [#1](#Ueberblick): Datenstruktur, Referenzen
+
+<!-- Verfolgter Ansatz:  -->
+
+In die Text-Encodings werden lediglich Anker eingesetzt:
+         
+```xml
+<anchor xml:id="LB.TEIL1.0320.typearea.0.L26.1"/>         
+```
+         
+Die eigentlichen Bereiche sind an anderer Stelle definiert (*stand off*):
+         
+```xml
+<spanGrp xml:id="spanGrp_00259" type="namedEntity" resp="#LB-Team-SZ">
+    <span from="LB.TEIL1.0320.typearea.0.L26.1" to="LB.TEIL1.0320.typearea.0.L26.2"/>
+</spanGrp>
+```
+
+Dort aufgezeichnete Bereiche lassen sich mit anderen Dateneinheiten verbinden (hier z.B. dem Eintrag des fiktiven [Prof. E. Kleinert](http://www.lokalbericht.ch/personen/LB.PFICT.KLEINE#LB.PFICT.KLEINE)): 
+         
+```xml         
+<linkGrp xml:id="linkGrp_00259" targFunc="goal source(s)" type="person">
+    <link target="#LB.PFICT.KLEINE #spanGrp_00259"/>
+</linkGrp>
+```
+
+Dieses Modell wird vorab für die Auszeichnung von Personen, Orten und Werken angewandt, die als Registereinträge mit Normdatenverweisen angelegt sind. 
+
+Auch dokumentübergreifende (textgenetische) Beziehungen ließen sich auf diese Weise in beliebiger Granularität abbilden.
+
+???
+
+**Datenstruktur**
+
+Als Folge dieses grundlegenden Entscheides mussten alle Verknüpfungen, seien es textgenetische Verwandtschaften oder Bezüge auf Personen, Orte oder Werke, als Anker an der entsprechenden Stelle in den Encodings ausgezeichnet werden.
+
+Die eigentlichen Bezugspunkte, z.B. ein Autoritäseintrag zu einer Person, stehen in einer Liste in einer anderen Datei.
+
+Die Tatsache, dass es zwischen einer Textstelle und einem Autoritätseintrag einen Bezug gibt, wird in einer zentralen Liste aufgezeichnet (durch `linkGrp` und `spanGrp`).
+
+Zwei Caveats:
+
+* der Aufwand (Zeit und Konzentration) für diese Codierung darf nicht unterschätzt werden, ein graphisches Tool wäre sehr hilfreich
+
+* das Auslesen der Daten ist relativ rechenintensiv
+
+---
+name: Mikrogenetisch1
+background-image: url(images/LD.TUSCULUM1.0010A.png)
+background-size: contain
+
+# [#2](#Ueberblick): Textgenetik: Mikroebene
+
+
+<img src="images/LD.TUSCULUM1.0010.png"
+      style="position: absolute;
+      top: 275px;
+      background:rgba(1,1,1,.5);      
+      color: white;
+      padding: 15px 15px;
+      left: 68px;
+      width: 742px;
+      line-height: 45px;"
+      title="Beispiel *Tusculum*"/>
+
+
+.footElementLeft[Typoskript *Tusculum*
+
+(o.D., in: SLA, Nachlass Hermann Burger, Schachtel 62/1, Sig. A-6-Datiertes)]
+         
+.bottomElementRight[[>](#Makrogenetisch)]
+
+???
+**Mikrogenese**
+
+---
+name: Mikrogenetisch2
+
+# [#2](#Ueberblick): Textgenetik: Mikroebene
+
+![Beispiel *Tusculum*](images/LD.TUSCULUM1.0010.png)
+``` xml
+<line>immer aufbruchsbereit zu bleiben. Die Distanzen vergröss<choice>
+    <orig><hi rend="effect_typebarimpression_25">e</hi></orig>
+    <reg resp="#LB-MW"/>
+</choice>ern sich von
+</line>
+<line>Jahrgang zu Jahrgang. Ein wirklich junger Lehrer wäre eine c<mod type="corr">
+    <sic/>
+    <add type="corr" hand="HB" rend="tool_ballpen color_blue" place="above">o</add>
+    <reg type="reg" resp="#LB-MW">o</reg>
+</mod>ntradict<choice>
+    <sic/>
+    <reg type="reg" resp="#LB-MW">i</reg>
+</choice>o
+</line>
+<line>in adjecto, weil Lehren an für sich eher zur Erstarrung als zur</line>
+<line>chaotischen Auflösung führt. Der Lehrer müs<mod type="corr">
+    <sic cert="low">r</sic>
+    <add rend="place_overtyped">s</add>
+    <reg>s</reg>
+</mod>te durch den Computer <choice>
+    <orig>er-</orig>
+    <reg>ersetzt</reg>
+</choice>
+</line>
+<line><choice>
+    <orig>setzt</orig>
+    <reg/></choice> werden, damit der Schüler im Umgang mit Persönlichkeiten menschlich
+</line>
+```
+???
+
+Mikrogenetische Phänomene wurden als Modifikationen `tei:mod` oder Alternativen (`tei:choice`) ausgezeichnet.
+
+Je nach Zweck kann das Rendering diese Strukturen unterschiedlich verarbeiten.
+
+Der Aufwand dieser Auszeichnungsarbeit steht in einem etwas ungünstigen Verhältnis zum Nutzen in der Druckausgabe und der digitalen Edition. Eine schlankere Auszeichnung, die es erlauben würde, einen regularisierten Lesetext zu extrahieren, genetische Phänomene aber nicht detailliert berücksichtigen würde, wäre im Nachhinein ein pragmatischerer Ansatz gewesen.
+
+---
+name: Makrogenetisch
+# [#3](#Ueberblick): Textgenetik: Makroebene
+
+<!-- Verfolgter Ansatz:  -->
+
+Verknüpfung auf Blattebene über den Identifikator des Blattes, wobei der genetische Vorläufer an erster Stelle und die späteren Verarbeitungen dahinter gereiht werden:
+
+```xml
+<linkGrp xml:id="macrolinkGrp_00006" targFunc="goal source(s)" type="geneticPath">
+        <link target="#AT.ERSCHREIBT1.0010 #LB.TEIL1.0170 #LB.TEIL1.0190" xml:id="macrolinkGrp_00006_1"/>
+</linkGrp>
+    
+<linkGrp xml:id="macrolinkGrp_00007" targFunc="goal source(s)" type="geneticPath">
+        <link target="#AT.ERSCHREIBT1.0020 #LB.TEIL2.1100 #LB.TEIL3.2040" xml:id="macrolinkGrp_00007_1"/>
+</linkGrp>
+```
+
+<!-- <img src="images/LB.TEIL2.1460.png"
+      class="jump" 
+      style="position: absolute;
+      top: 325px;
+      /*background:rgba(1,1,1,.5);      */
+      color: white;
+      padding: 15px 15px;
+      left: 468px;
+      width: 400px;
+      -webkit-transform: rotate(10deg);
+      -moz-transform: rotate(10deg);
+      -ms-transform: rotate(10deg);
+      -o-transform: rotate(10deg);
+      transform: rotate(10deg);"
+      title="Teil I, S. 146"/> -->
+
+<img src="images/LB.TEIL1.0190.png"
+      class="jump" 
+      style="position: absolute;
+      top: 335px;
+      /*background:rgba(1,1,1,.5);      */
+      color: white;
+      padding: 15px 15px;
+      left: 430px;
+      width: 400px;
+      -webkit-transform: rotate(-12deg);
+      -moz-transform: rotate(-12deg);
+      -ms-transform: rotate(-12deg);
+      -o-transform: rotate(-12deg);
+      transform: rotate(-12deg);"
+      title="Teil I, S. 19"/> 
+
+<img src="images/LB.TEIL1.0170.png"
+      class="jump" 
+      style="
+      position: absolute;
+      top: 370px;
+      /*background:rgba(1,1,1,.5);      */
+      color: white;
+      padding: 15px 15px;
+      left: 360px;
+      width: 400px;
+      -webkit-transform: rotate(9deg);
+      -moz-transform: rotate(9deg);
+      -ms-transform: rotate(9deg);
+      -o-transform: rotate(9deg);
+      transform: rotate(9deg);"
+      title="Teil I, S. 17"/>
+
+<img src="images/AT.ERSCHREIBT1.0010.png"
+      style="position: absolute;
+      top: 323px;
+      /*background:rgba(1,1,1,.5);      */
+      color: white;
+      padding: 15px 15px;
+      left: 52px;
+      height: 600px;
+      -webkit-transform: rotate(-5deg);
+      -moz-transform: rotate(-5deg);
+      -ms-transform: rotate(-5deg);
+      -o-transform: rotate(-5deg);
+      transform: rotate(-5deg);"
+      title="Er schreibt"/>
+
+???
+
+Der Bereich der Makrogenese erwies sich im Verlauf des Projektes als der interessanteste und für das Verständnis der Textgenese erhellendste.
+
+Weil das physische Blatt in Burgers Arbeits- und Montageweise eine entscheidende Rolle spielt, verwendeten wir diese Einheit zum Erfassen der makrogenetischen Bezüge. Grundsätzlich könnten Bezüge auf beliebiger Ebene unterhalb des Blattes angelegt werden, der Aufwand für eine konsistente Bearbeitung wäre aber beträchtlich.
+
+---
+name: DigitaleEdition
+background-image: url(images/LB_ErSchreibt_Teil1a.png)
+background-size: contain
+
+.lokalbericht-ch-nav[]
+.lokalbericht-ch-corenav[]
+.lokalbericht-ch-corel[]
+.lokalbericht-ch-corer[]
+.lokalbericht-ch-navr[]
+.lokalbericht-ch-quot[]
+<a class="lokalbericht-ch-visnav" href="http://www.lokalbericht.ch/synopsis/AT.ERSCHREIBT1.0010-t/LB.TEIL1.0170-t#lb-birdseye" target="_blank"></a>
+
+.footElementLeft[<a href="http://www.lokalbericht.ch/synopsis/AT.ERSCHREIBT1.0010-t/LB.TEIL1.0170-t" target="_blank">lokalbericht.ch/synopsis/AT.ERSCHREIBT1.0010-t/LB.TEIL1.0170-t</a>]
+
+???
+
+**Organisation und Struktur der digitalen Edition**
+
+<!--
+-/-/-
+name: Werkzeugauswahl
+
+# [Werkzeugauswahl: bestimmende Faktoren](#Ueberblick)
+
+* begrenzte Personalressourcen für die technische Umsetzung<br/>
+<span style="opacity: 0.5;">40%-Stelle, 36 Monate</span>
+
+* Zielumgebung unbekannt<br/>
+<span style="opacity: 0.5;">technisch – institutionell – personell</span>
+
+* angestrebte Nachhaltigkeit<br/>
+<span style="opacity: 0.5;">Reduktion der Komplexität</span>
+
+* Charakterisierung der Daten<br/>
+<span style="opacity: 0.5;">eher Text- als Datenbankcharakter, überschaubare Datenmenge</span>
+
+* Persönliche Vorkenntnisse und Vorlieben
+
+???
+
+**Werkzeugauswahl: bestimmende Faktoren**
+
+-/-/-
+name: Technologie
+    
+# [Technologien](#Ueberblick)
+
+##### [Kiln](https://github.com/kcl-ddh/kiln) 
+<div style="position: absolute; top: 145px; left: 180px; font-size: small;"><a href="https://github.com/kcl-ddh/kiln">https://github.com/kcl-ddh/kiln</a> .remark-inline-code[Apache License 2.0]</div>
+
+ * [**Apache Cocoon 2.1**](http://cocoon.apache.org/2.1/) (XSL-Pipelines) .remark-inline-code[Apache License 2.0]
+ * [**Apache Ant**](http://ant.apache.org) (Build-Tool) .remark-inline-code[Apache License 2.0]
+ * [**Apache Solr**](http://lucene.apache.org/solr/) (Suche) .remark-inline-code[Apache License 2.0]
+ * [**Jetty**](http://www.eclipse.org/jetty/) (Webserver) .remark-inline-code[Apache License 2.0 / Eclipse Public License 1.0]
+ * <span style="opacity: 0.5">[**Sesame 2**](https://en.wikipedia.org/wiki/Sesame_(framework) (RDF) .remark-inline-code[Aduna BSDLicense]</span>
+
+##### Bilddaten
+
+ * [**IIPImage**](https://github.com/iipimage) (Tile-Server) .remark-inline-code[GNU GPL]
+ * [**OpenSeadragon**](https://openseadragon.github.io) (Einbindung) .remark-inline-code[New BSD]
+
+##### CSS/JS
+
+* [**Foundation 6.3**](https://github.com/zurb/foundation-sites) (SASS) .remark-inline-code[MIT License]
+
+##### Datenvisualisierung
+
+* [**D3.js**](https://d3js.org) – .remark-inline-code[BSD License]
+
+???
+
+**Eingesetzte Technologien**
+
+-/-/-
+name: Kiln
+background-image: url(images/LB_KILN.png)
+background-size: 90%
+
+# Kiln
+
+???
+
+**Kiln**
+
+-/-/-
+name: Nachhaltigkeit
+
+# [Nachhaltigkeitsaspekte](#Ueberblick)
+
+* Voraussetzungen: siehe [vorne](#Werkzeugauswahl)
+
+* Strategien
+
+ * offene Standards und Werkzeuge
+ * Portabilität
+ * minimaler Wartungsaufwand 
+ * [Ressourcenbeschreibung / Factsheet](#DCH)
+
+## Nachhaltigkeit und **Performanz**
+
+* Generierung von statischem HTML
+
+ * rund 15'000 Dateien, direkt durch Apache ausgeliefert (4 GB)
+ * das umfasst alles außer die synoptischen Ansichten<br/>
+ <span style="opacity: 0.5;">ansonsten vierhundertfaches Volumen</span>
+ * Kiln: statische Builds mit *wget*<br/>
+ `$ ./build.sh lb-static`
+
+???
+
+**Nachhaltigkeitsaspekte/Performanz**
+
+ 
+-/-/-
+name: DCH
+
+<h1 style="position: absolute; top: -15px; z-index: 99">Factsheet</h1>
+
+<div style="position: relative; left: -30px; top:-15px; z-index: 0">
+
+<img src="images/DCH3.png"
+      class="jump" 
+      style="position: absolute;
+      top: 75px;
+      color: white;
+      left: 468px;
+      width: 600px;
+      box-shadow: 1px 1px 5px #888888;
+      -webkit-transform: rotate(10deg);
+      -moz-transform: rotate(10deg);
+      -ms-transform: rotate(10deg);
+      -o-transform: rotate(10deg);
+      transform: rotate(10deg);"
+      title="DCH-Fragebogen"/>
+
+<img src="images/DCH2.png"
+      class="jump" 
+      style="position: absolute;
+      top: -15px;
+      color: white;
+      left: 220px;
+      width: 600px;
+      box-shadow: 1px 1px 5px #888888;
+      -webkit-transform: rotate(-5deg);
+      -moz-transform: rotate(-5deg);
+      -ms-transform: rotate(-5deg);
+      -o-transform: rotate(-5deg);
+      transform: rotate(-5deg);"
+      title="DCH-Fragebogen"/> 
+
+<img src="images/DCH1.png"
+      style="
+      position: absolute;
+      top: -65px;
+      /*color: white;*/
+      left: 20px;
+      width: 600px;
+      box-shadow: 1px 1px 5px #888888;
+      -webkit-transform: rotate(-15deg);
+      -moz-transform: rotate(-15deg);
+      -ms-transform: rotate(-15deg);
+      -o-transform: rotate(-15deg);
+      transform: rotate(-15deg);"
+      title="DCH-Fragebogen"/>
+      </div>
+
+???
+
+**DCH** -->
+
+
+
+---
+name: Diskussion
+layout: false
+background-image: url(images/ErSchreibt.jpg)
+
+#[Vielen Dank für die Aufmerksamkeit](#Ueberblick)
+
+    </textarea>
+
+    <script type="text/javascript">
+    $('#lb1').rebox({ selector: 'a' });
+    </script>
+
+  
+    <script src="remark/out/remark.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      var slideshow = remark.create();
+    </script>
+
+    <script type="text/javascript">
+
+      $(document).ready(function(){
+        $('#lb1').rebox(
+          {
+            theme: 'rebox',        // class name parent gets (for your css)
+            selector: 'a',        // the selector to delegate to, should be to the <a> which contains an <img>
+            prev: '&lt;',        // use an image, text, whatever for the previous button
+            next: '&gt;',        // use an image, text, whatever for the next button
+            loading: '%',          // use an image, text, whatever for the loading notification
+            //close: '&times;',      // use an image, text, whatever for the close button
+            //speed: 600,            // speed to fade in or out
+            //zIndex: 1000,          // zIndex to apply to the outer container
+            //cycle: true,           // whether to cycle through galleries or stop at ends
+            //captionAttr: 'title'   // name of the attribute to grab the caption from
+            //template: 'image',     // the default template to be used (see templates below)
+            //templates: {           // define templates to create the elements you need function($item, settings)
+             //   image: function($item, settings, callback){ 
+             //       return $('<img src="'+ $item.attr('href') +'" class="'+ s.theme +'-content" />').load(callback);
+             //       }
+             //   }
+            }
+
+          );
+        });
+      </script>
+
+  </body>
+</html>

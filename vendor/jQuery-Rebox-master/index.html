@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+
+		<title>Rebox - jQuery or Zepto tiny small simple responsive lightbox</title>
+
+		<meta name="Description" content="jQuery Rebox - jQuery/Zepto lightbox that is small, simple, responsive, mobile friendly, that delegates." />
+		<meta name="Keywords" content="jquery, Zepto, javascript, lightbox, responsive, small, tiny, mobile" />
+
+		<style type="text/css">
+			body,img,p,h1,h2,h3,h4,h5,h6,form,table,td,ul,ol,li,dl,dt,dd,pre,blockquote,fieldset,label{
+				margin:0;
+				padding:0;
+				border:0;
+			}
+			body{ background-color: #f8f7ec; border-top: solid 10px #777; font: 90% Helvetica, sans-serif; padding: 20px; }
+			h1,h2,h3,h4{ margin: 10px 0; font-family: Plantin, "Plantin std", "Plantin", "Baskerville", Georgia, "Times New Roman", serif; font-weight: normal; }
+			h1{font-size: 2.2em;margin: 0 0 20px 0; }
+			h2{ background-color: #D95656; line-height: 18px; font-size: 18px; letter-spacing: 1px; padding: 5px 10px; margin: 10px 0 10px -60px; color: #fff; display: inline-block; border-radius: 4px; -moz-border-radius: 4px;-webkit-border-radius: 4px; }
+			h3{ color: #D95656; font-size: 18px; letter-spacing: 1px;  margin: 15px 0 15px -20px; }
+			h4{ color: #777; font-size: 18px; letter-spacing: 1px; }
+			p{ margin: 10px 0; line-height: 150%; }
+			a{ color: #7b94b2; }
+			ul,ol{ margin: 10px 0 10px 40px; }
+			li{ margin: 4px 0; }
+			dl{ margin: 10px 0; }
+			dl dt{ font-weight: bold; line-height: 20px; margin: 10px 0 0 0; }
+			dl dd{ margin: -20px 0 10px 120px; padding-bottom: 10px; border-bottom: solid 1px #eee;}
+			pre{ font-size: 12px; line-height: 16px; padding: 5px 5px 5px 10px; margin: 10px 0; border-left: solid 5px #9EC45F; overflow: auto; }
+
+			.wrapper{ background-color: #ffffff; width: 600px; border: solid 1px #eeeeee; padding: 20px 20px 20px 40px; margin: 0 auto; border-radius: 6px; -moz-border-radius: 6px;-webkit-border-radius: 6px; }
+			.header{ text-align: center;position: relative; margin: 0 -20px 0 -40px; }
+			.header ul{ margin: 10px 0; display: block; }
+			.header ul li{ display: inline-block; list-style: none; margin: 10px 0; width: 100px; }
+			.header ul li a{ text-transform: uppercase; color: #777; text-decoration: none; font-size: 12px; }
+			.header ul li a:hover{ color: #555; }
+			.header .tour{ color: #fff; background-color: #9ec45f; padding: 4px 10px; margin: 10px 0; font-size: 18px; line-height: 18px; text-decoration: none;border-radius: 4px; -moz-border-radius: 4px;-webkit-border-radius: 4px;}
+			.header .tour:hover{ background-color: #8eb44f; }
+			.header ul.scrollnav{ position: fixed; top: 0px; left: 50%; background-color: #777; display: none; margin: 0 0 0 -185px; border-radius: 0 0 0 6px; -moz-border-radius: 0 0 0 6px;-webkit-border-radius: 0 0 0 6px;}
+			.header ul.scrollnav li a{ color: #fff; }
+			.header ul.scrollnav.scrolled{ display: inline; }
+			.clear{ clear: both; }
+
+			.gallery{}
+			.gallery img{ width: 24%; }
+		</style>
+
+		<link rel="stylesheet" media="all" type="text/css" href="jquery-rebox.css" />
+
+	</head>
+
+	<body>
+		<div class="wrapper">
+			<div class="header">
+				<h1>Rebox - jQuery or Zepto tiny small simple responsive lightbox</h1>
+
+				<ul class="nav">
+					<li><a href="#Get_Started" title="Get Started">Get Started</a></li>
+					<li><a href="#Examples" title="Examples">Examples</a></li>
+					<li><a href="#Options" title="Options">Options</a></li>
+					<li><a href="#Methods" title="Methods">Methods</a></li>
+					<li><a href="#Events" title="Events">Events</a></li>
+				</ul>
+
+			</div>
+
+			<div class="content">
+
+				
+
+						<!-- ============= example -->
+						<div class="example-container">
+							<h3>Gallery Initialization</h3>
+							<p>Create a gallery style lightbox:</p>
+							<div>
+						 		<div id="gallery2" class="gallery">
+						 			<a href="media/sample_a.jpg" title="Caption for image A"><img src="media/sample_a_thumb.jpg" /></a>
+						 			<a href="media/sample_b.jpg" title="Caption for image B"><img src="media/sample_b_thumb.jpg" /></a>
+						 			<a href="media/sample_c.jpg" title="Caption for image C"><img src="media/sample_c_thumb.jpg" /></a>
+						 			<a href="media/sample_d.jpg" title="Caption for image D"><img src="media/sample_d_thumb.jpg" /></a>
+						 		</div>
+							</div>
+<pre class="ex code" data-lllanguage="js">
+$('#gallery2').rebox({ selector: 'a' });
+</pre >
+						</div>
+
+				
+
+			</div>
+		</div>
+
+		<script type="text/javascript" src="lib/jquery.min.js"></script>
+		<!-- <script type="text/javascript" src="lib/zepto.min.js"></script> -->
+		<script type="text/javascript" src="lib/jquery-litelighter.js"></script>
+		<script type="text/javascript" src="jquery-rebox.js"></script>
+
+		<script type="text/javascript">
+
+			$(document).ready(function(){
+				// quick routine for scrolling nav
+				var $nav = $('.header ul'),
+					navoffset = $nav.offset(),
+					$navclone = $nav.clone().addClass('scrollnav').appendTo('.header'),
+					$window = $(window);
+				$window.scroll(function(e){
+					if((navoffset.top+50) < $window.scrollTop()){
+						if(!$navclone.hasClass('scrolled'))
+							$navclone.addClass('scrolled');
+					}
+					else $navclone.removeClass('scrolled');
+				}).scroll();
+
+				// highlight the code
+				$('pre.code').litelighter();
+
+				// run the examples
+				$('.example-container > pre.ex').each(function(i){
+					eval($(this).data('llcode'));
+				});
+			});
+		</script>
+
+		
+	</body>
+</html>
